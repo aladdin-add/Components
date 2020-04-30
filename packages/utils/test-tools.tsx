@@ -1,7 +1,6 @@
 import React from "react";
 import { mount, shallow } from "enzyme";
 
-
 import { ThemeProvider } from "@orchard/theme/theme-provider";
 import { ThemeModeEnum } from "@orchard/theme/enums/themeModeEnum";
 
@@ -11,16 +10,16 @@ const removeProperties = () => {
   const keys = ["theme", "styledTheme"];
 
   return {
-    test: val => {
+    test: (val) => {
       return (
         val &&
         typeof val === "object" &&
         "props" in val &&
-        Object.keys(val.props).some(prop => keys.some(key => key === prop))
+        Object.keys(val.props).some((prop) => keys.some((key) => key === prop))
       );
     },
     print: (val, serialize) => {
-      keys.forEach(key => {
+      keys.forEach((key) => {
         delete val.props[key];
       });
       return serialize(val);
@@ -28,13 +27,21 @@ const removeProperties = () => {
   };
 };
 
-export const shallowWithTheme = children => 
-  shallow(<ThemeProvider theme={theme} mode={ThemeModeEnum.DARK}>{children}</ThemeProvider>)
-    .dive()
-    .shallow();
-    
-export const mountWithTheme = children => {
+export const shallowWithTheme = (children) => 
+  shallow(
+    <ThemeProvider theme={theme} mode={ThemeModeEnum.DARK}>
+      {children}
+    </ThemeProvider>
+  )
+  .dive()
+  .shallow();
+
+export const mountWithTheme = (children) => {
   expect.addSnapshotSerializer(removeProperties());
   
-  return mount(<ThemeProvider theme={theme} mode={ThemeModeEnum.DARK}>{children}</ThemeProvider>);
+  return mount(
+    <ThemeProvider theme={theme} mode={ThemeModeEnum.DARK}>
+      {children}
+    </ThemeProvider>
+  );
 };
