@@ -36,5 +36,5 @@ export const shallowWithTheme = children =>
 export const mountWithTheme = children => {
   expect.addSnapshotSerializer(removeProperties());
   
-  return (mount(<ThemeProvider theme={theme} mode={ThemeModeEnum.DARK}>{children}</ThemeProvider>);
+  return mount(<ThemeProvider theme={theme} mode={ThemeModeEnum.DARK}>{children}</ThemeProvider>);
 };
