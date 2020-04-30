@@ -2,7 +2,6 @@ import React from "react";
 import { mount, shallow } from "enzyme";
 
 import { ThemeProvider } from "@orchard/theme/theme-provider";
-import { ThemeModeEnum } from "@orchard/theme/enums/themeModeEnum";
 
 import theme from "@/theme";
 
@@ -27,19 +26,13 @@ const removeProperties = () => {
   };
 };
 
-export const shallowWithTheme = (children) =>
-  shallow(
-    <ThemeProvider theme={theme} mode={ThemeModeEnum.DARK}>
-      {children}
-    </ThemeProvider>)
+export const shallowWithTheme = children =>
+  shallow(<ThemeProvider theme={theme}>{children}</ThemeProvider>)
     .dive()
     .shallow();
 
-export const mountWithTheme = (children) => {
+export const mountWithTheme = children => {
   expect.addSnapshotSerializer(removeProperties());
 
-  return mount(
-    <ThemeProvider theme={theme} mode={ThemeModeEnum.DARK}>
-      {children}
-    </ThemeProvider>);
+  return mount(<ThemeProvider theme={theme}>{children}</ThemeProvider>);
 };
