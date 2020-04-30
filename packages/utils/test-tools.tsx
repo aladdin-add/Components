@@ -26,12 +26,12 @@ const removeProperties = () => {
   };
 };
 
-export const shallowWithTheme = children =>
+export const shallowWithTheme = (children) =>
   shallow(<ThemeProvider theme={theme}>{children}</ThemeProvider>)
     .dive()
     .shallow();
 
-export const mountWithTheme = children => {
+export const mountWithTheme = (children) => {
   expect.addSnapshotSerializer(removeProperties());
 
   return mount(<ThemeProvider theme={theme}>{children}</ThemeProvider>);
