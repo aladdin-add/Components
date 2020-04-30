@@ -18,4 +18,5 @@ jobs:
       - checkout
       - run: yarn
       - run: yarn lint
+      - run: yarn build:tokens
       - run: yarn test
