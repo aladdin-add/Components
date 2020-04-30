@@ -27,21 +27,19 @@ const removeProperties = () => {
   };
 };
 
-export const shallowWithTheme = (children) => 
+export const shallowWithTheme = (children) =>
   shallow(
     <ThemeProvider theme={theme} mode={ThemeModeEnum.DARK}>
       {children}
-    </ThemeProvider>
-  )
-  .dive()
-  .shallow();
+    </ThemeProvider>)
+    .dive()
+    .shallow();
 
 export const mountWithTheme = (children) => {
   expect.addSnapshotSerializer(removeProperties());
-  
+
   return mount(
     <ThemeProvider theme={theme} mode={ThemeModeEnum.DARK}>
       {children}
-    </ThemeProvider>
-  );
+    </ThemeProvider>);
 };
