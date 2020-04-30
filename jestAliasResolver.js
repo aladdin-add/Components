@@ -7,7 +7,6 @@ const dirs = [
   "packages/atoms/",
   "packages/molecules/",
   "packages/organisms/",
-  "packages/pages/",
   "packages/utils/",
 ];
 
