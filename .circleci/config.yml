@@ -32,6 +32,11 @@ jobs:
       - run: cd packages && ls -la
       - run: yarn test
   deploy:
+    branches:
+      only:
+        - master
+        - alpha-*
+        - beta-*
     executor:
       name: node/default
       tag: '12.16'
