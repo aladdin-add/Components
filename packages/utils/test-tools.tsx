@@ -1,7 +1,7 @@
 import React from "react";
 import { mount, shallow } from "enzyme";
 
-import { ThemeProvider } from "@orchard/theme/theme-provider";
+import { ThemeProvider } from "@aw-web-design/theme/theme-provider";
 
 import theme from "@/theme";
 
