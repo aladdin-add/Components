@@ -1,5 +1,5 @@
 {
-  "name": "orchard-componenta",
+  "name": "@aw-web-design/components",
   "version": "0.0.1",
   "description": "A component library",
   "scripts": {
@@ -30,7 +30,7 @@
     "styled-components": "5.1.0",
     "styled-system": "5.1.5",
     "csstype": "2.6.10",
-    "@orchard/theme": "AW-Web-Design/Theme#master"
+    "@aw-web-design/theme": "0.01"
   },
   "devDependencies": {
     "@types/webpack": "^4.39.1",
