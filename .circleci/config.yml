@@ -14,11 +14,12 @@ workflows:
       - deploy:
           requires:
             - test
-          branches:
-            only:
-              - master
-              - /alpha-*/
-              - /beta-*/
+          filters:
+            branches:
+              only:
+                - master
+                - /alpha-*/
+                - /beta-*/
 
 jobs:
   test:
