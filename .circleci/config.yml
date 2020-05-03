@@ -8,16 +8,31 @@ workflows:
   test:
     jobs:
       - test
+  deploy:
+    jobs:
+      - test
+      - deploy:
+          requires:
+            - test
 
 jobs:
   test:
-    executor:
-      name: node/default
-      tag: '12.16'
     steps:
       - checkout
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
       - run: yarn
       - run: yarn lint
       - run: yarn build:tokens
       - run: cd packages && ls -la
       - run: yarn test
+  deploy:
+    executor:
+      name: node/default
+      tag: '12.16'
+    steps:
+      - attach_workspace:
+          at: .
+      - run: npm publish
