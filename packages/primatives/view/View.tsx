@@ -1,6 +1,6 @@
 import React from "react";
 
-import StyledBox from "./styled";
+import StyledView from "./styled";
 
 const View = ({ children }) => <StyledView>{children}</StyledView>;
 
