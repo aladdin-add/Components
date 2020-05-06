@@ -40,6 +40,7 @@ jobs:
             - .
       - run: yarn
       - run: yarn lint
+      - run: cd node_modules/@aw-web-design && ls -la
       - run: yarn build:tokens
       - run: cd packages && ls -la
       - run: yarn test
