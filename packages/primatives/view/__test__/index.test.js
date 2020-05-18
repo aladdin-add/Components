@@ -3,14 +3,14 @@ import toJson from "enzyme-to-json";
 
 import { shallowWithTheme } from "@/test-tools";
 
-import Box from "../Box";
+import View from "../View";
 
-describe("<Box />", () => {
+describe("<View />", () => {
   it("renders correctly", () => {
     const wrapper = shallowWithTheme(
-      <Box>
+      <View>
         content
-      </Box>
+      </View>
     );
     expect(wrapper).toMatchSnapshot();
   });
