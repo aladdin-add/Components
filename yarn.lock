@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@aw-web-design/theme@0.0.13":
-  version "0.0.13"
-  resolved "https://npm.pkg.github.com/download/@aw-web-design/theme/0.0.13/84a0c3085df715d57552745b7250a59b98967fdce35a84cea0d4a136d0352af1#642968a558617a77556542087ca5b961b130e580"
-  integrity sha512-4+t1a5Bve8uZ2jheR04v/Br/HrmbhBcUSbvvLMbR8P6cA2sluIaAECPIhFwAZcH0MAb1fwsK2F2inQRZtlcYpw==
+"@aw-web-design/theme@0.0.14":
+  version "0.0.14"
+  resolved "https://npm.pkg.github.com/download/@aw-web-design/theme/0.0.14/eec7df9a385d52e19c2f61e4fab9fa78b60cd20dfc144ca0eb963da0748634b7#046e7856155ab99fcfdf0744282392707b9bb571"
+  integrity sha512-Ops6rgxfzpdwVu/qYDKNGTsz4qAxvLqERWVary3+Im/SY+Qn5yTu5LK85Ah6/RCnFaMWlGTo7PAU3CRy9MqO4g==
   dependencies:
     "@types/react" "^16.9.35"
     "@types/styled-components" "^5.1.0"
