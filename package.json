@@ -78,7 +78,7 @@
     "enzyme-adapter-react-16": "^1.15.3",
     "enzyme-to-json": "^3.5.0",
     "jest": "26.4.1",
-    "jest-cli": "26.4.0"
+    "jest-cli": "26.4.1"
   },
   "jest": {
     "collectCoverageFrom": [
