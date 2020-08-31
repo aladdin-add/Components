@@ -75,7 +75,7 @@
     "ts-loader": "8.0.3",
     "babel-loader": "^8.0.4",
     "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.15.3",
+    "enzyme-adapter-react-16": "^1.15.4",
     "enzyme-to-json": "^3.5.0",
     "jest": "26.4.2",
     "jest-cli": "26.4.2"
