@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@aw-web-design/theme@0.0.20":
-  version "0.0.20"
-  resolved "https://registry.yarnpkg.com/@aw-web-design/theme/-/theme-0.0.20.tgz#f2a45f3ba3de81ef805f37d45c53498bce105ab2"
-  integrity sha512-O+OX2quDiVrPcaAqrZLEUCONiXyiTXZ96zv/8SQSWlHzAQ27q/q9Qyj23aBGe3JMkvwmYI4mHdxLISRPAbbAMw==
+"@aw-web-design/theme@0.0.22":
+  version "0.0.22"
+  resolved "https://registry.yarnpkg.com/@aw-web-design/theme/-/theme-0.0.22.tgz#875ea93eb6ed360a909a9a6dc06d0a2fce8438c7"
+  integrity sha512-TdNpeiGchHqraE9EKDSRHG1NcjdCD6oe12ig/qeuPBWcHkjcSKoUSp1YNDjgqGlBPGTEE+PmZNZilcx/ryInOA==
   dependencies:
     "@types/react" "^16.9.44"
     "@types/styled-components" "^5.1.2"
