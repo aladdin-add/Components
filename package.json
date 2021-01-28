@@ -1,6 +1,6 @@
 {
   "name": "@aw-web-design/components",
-  "version": "0.0.6",
+  "version": "0.0.9",
   "description": "A component library",
   "scripts": {
     "build:tokens": "node ./node_modules/@aw-web-design/theme/generate",
@@ -30,7 +30,7 @@
     "styled-components": "5.1.1",
     "styled-system": "5.1.5",
     "csstype": "3.0.2",
-    "@aw-web-design/theme": "0.0.17"
+    "@aw-web-design/theme": "0.0.22"
   },
   "devDependencies": {
     "@types/webpack": "^4.41.21",
