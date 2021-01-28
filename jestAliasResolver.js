@@ -4,6 +4,7 @@ const Path = require("path");
 
 const dirs = [
   "packages/",
+  "packages/primatives/",
   "packages/atoms/",
   "packages/molecules/",
   "packages/organisms/",
@@ -13,10 +14,10 @@ const dirs = [
 const extensions = ["tsx", "ts"];
 
 module.exports = function(importPath, opts) {
-  if (importPath.includes("@")) {
+  if (importPath.includes("@/")) {
     for (let i = 0; i < dirs.length; i++) {
       const dir = dirs[i];
-      const componentPath = dir + importPath.replace("@", "");
+      const componentPath = dir + importPath.replace("@/", "");
 
       for (let j = 0; j < extensions.length; j++) {
         const extension = extensions[j];
