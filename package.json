@@ -31,6 +31,7 @@
     "styled-system": "5.1.5",
     "csstype": "3.0.2",
     "@aw-web-design/theme": "0.0.24"
+  },
   "devDependencies": {
     "@types/webpack": "^4.41.22",
     "@types/webpack-env": "^1.15.3",
