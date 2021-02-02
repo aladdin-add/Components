@@ -1,3 +1,4 @@
-import View from "./View";
+import View, { Props } from "./View";
 
+export { Props };
 export default View;

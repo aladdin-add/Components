@@ -1,7 +1,12 @@
 import React from "react";
 
-import StyledText from "./styled";
+import { StyledText } from "./styled";
 
-const Text = ({ children }) => <StyledText>{children}</StyledText>;
+export interface Props {
+  children: string;
+  autoid?: string;
+}
+
+const Text = ({ children, autoid }: Props) => <StyledText data-autoid={autoid}>{children}</StyledText>;
 
 export default Text;

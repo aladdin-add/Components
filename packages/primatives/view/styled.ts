@@ -7,13 +7,13 @@ const utilProps = system({
   },
   pointerEvents: {
     property: "pointerEvents",
-  }
+  },
 });
 
-const StyledView = styled.div`
+const StyledProps = compose(space, color, layout, position, border, shadow, flexbox, utilProps);
+
+export const StyledView = styled.div`
   display: block;
   box-sizing: border-box;
-  ${compose(space, color, layout, position, border, shadow, flexbox, utilProps)}
+  ${StyledProps}
 `;
-
-export default StyledView;

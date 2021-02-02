@@ -1,7 +1,17 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
-import StyledView from "./styled";
+import { StyledView } from "./styled";
 
-const View = ({ children }) => <StyledView>{children}</StyledView>;
+export interface Props {
+  children: ReactNode;
+  as?: any;
+  autoid: string;
+}
+
+const View = ({ children, as, autoid }: Props) => (
+  <StyledView data-autoid={autoid} as={as}>
+    {children}
+  </StyledView>
+);
 
 export default View;
