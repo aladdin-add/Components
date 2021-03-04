@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@aw-web-design/theme@0.0.26":
-  version "0.0.26"
-  resolved "https://registry.yarnpkg.com/@aw-web-design/theme/-/theme-0.0.26.tgz#d6bc76b49035dabdba7df7568226fa5db815a664"
-  integrity sha512-BaU6Q+LP+Cd2srNe3hO60qex9nXmrclQ4hVN+4fZGFuONcNcwGmYQXL5bXr3i8LHUiZmz5O1MvuVS2lfHewSPw==
+"@aw-web-design/theme@0.0.27":
+  version "0.0.27"
+  resolved "https://registry.yarnpkg.com/@aw-web-design/theme/-/theme-0.0.27.tgz#4316b205ec39da09d546c95d47641dee2b9b701e"
+  integrity sha512-EH2Sn9+LM426f0NAXnESliu5lk7nG4nCpbjy5PT4u5xKtw5uY0Oxn1cyBZYfKfDo6DXV6pGcDodp714cT0fFVQ==
   dependencies:
     "@types/react" "^17.0.0"
     "@types/styled-components" "^5.1.7"
@@ -4568,22 +4568,18 @@ copy-to-clipboard@^3.0.8:
   dependencies:
     toggle-selection "^1.0.6"
 
-copy-webpack-plugin@^6.1.1:
-  version "6.4.1"
-  resolved "https://registry.yarnpkg.com/copy-webpack-plugin/-/copy-webpack-plugin-6.4.1.tgz#138cd9b436dbca0a6d071720d5414848992ec47e"
-  integrity sha512-MXyPCjdPVx5iiWyl40Va3JGh27bKzOTNY3NjUTrosD2q7dR/cLD0013uqJ3BpFbUjyONINjb6qI7nDIJujrMbA==
+copy-webpack-plugin@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/copy-webpack-plugin/-/copy-webpack-plugin-8.0.0.tgz#3db5efb80d492127507303d1842e35011e2f318f"
+  integrity sha512-sqGe2FsB67wV/De+sz5azQklADe4thN016od6m7iK9KbjrSc1SEgg5QZ0LN+jGx5aZR52CbuXbqOhoIbqzzXlA==
   dependencies:
-    cacache "^15.0.5"
-    fast-glob "^3.2.4"
-    find-cache-dir "^3.3.1"
+    fast-glob "^3.2.5"
     glob-parent "^5.1.1"
-    globby "^11.0.1"
-    loader-utils "^2.0.0"
+    globby "^11.0.2"
     normalize-path "^3.0.0"
-    p-limit "^3.0.2"
+    p-limit "^3.1.0"
     schema-utils "^3.0.0"
     serialize-javascript "^5.0.1"
-    webpack-sources "^1.4.3"
 
 core-js-compat@^3.8.1, core-js-compat@^3.9.0:
   version "3.9.0"
@@ -6163,7 +6159,7 @@ fast-glob@^2.2.6:
     merge2 "^1.2.3"
     micromatch "^3.1.10"
 
-fast-glob@^3.1.1, fast-glob@^3.2.4, fast-glob@^3.2.5:
+fast-glob@^3.1.1, fast-glob@^3.2.5:
   version "3.2.5"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.5.tgz#7939af2a656de79a4f1901903ee8adcaa7cb9661"
   integrity sha512-2DtFcgT68wiTTiwZ2hNdJfcHNke9XOfnwmBRWXhmeKM8rF0TGwmC/Qto3S7RoZKp5cilZbxzO5iTNTQsJ+EeDg==
