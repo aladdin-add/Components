@@ -9,7 +9,7 @@ import {
   FlexboxProps
 } from "styled-system";
 
-import { StyledView } from "./styled";
+import { StyledBox } from "./styled";
 
 export interface Props extends 
   SpaceProps, 
@@ -26,9 +26,9 @@ export interface Props extends
 }
 
 const View = ({ children, as, autoid }: Props) => (
-  <StyledView data-autoid={autoid} as={as}>
+  <StyledBox data-autoid={autoid} as={as}>
     {children}
-  </StyledView>
+  </StyledBox>
 );
 
-export default View;
+export default Box;
