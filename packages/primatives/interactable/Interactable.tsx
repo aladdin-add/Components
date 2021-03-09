@@ -1,6 +1,8 @@
 import React, { ReactNode } from "react";
 import { ViewProps } from "@/view";
 
+import { StyledInteractable } from "./styled";
+
 export interface Props extends ViewProps {
   onClick?: () => void;
 }
