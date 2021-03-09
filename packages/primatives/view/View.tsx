@@ -25,8 +25,8 @@ export interface Props extends
   autoid: string;
 }
 
-const View = ({ children, as, autoid }: Props) => (
-  <StyledBox data-autoid={autoid} as={as}>
+const View = ({ children, as, autoid, ...rest }: Props) => (
+  <StyledBox data-autoid={autoid} as={as} {...rest as Array<Props>}>
     {children}
   </StyledBox>
 );
