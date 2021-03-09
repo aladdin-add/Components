@@ -1,8 +1,7 @@
 import React, { ReactNode } from "react";
+import { ViewProps } from "@/view";
 
-export interface Props {
-  children: ReactNode
-  autoid?: string;
+export interface Props extends ViewProps {
   onClick?: () => void;
 }
 
@@ -15,9 +14,9 @@ const Interactable = ({ children, onClick, ...rest }: Props) => {
   }
 
   return (
-    <StyledView {...rest} onClick={handleOnClick}>
+    <StyledInteractable {...rest} onClick={handleOnClick}>
       {children}
-    </StyledView>
+    </StyledInteractable>
   );
 }
 
