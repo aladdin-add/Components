@@ -1,9 +1,9 @@
 import React, { ReactNode } from "react";
-import { ViewProps } from "@/view";
+import { Props as BoxProps } from "@/Box";
 
 import { StyledInteractable } from "./styled";
 
-export interface Props extends ViewProps {
+export interface Props extends BoxProps {
   onClick?: () => void;
 }
 
