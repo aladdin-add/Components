@@ -1,4 +1,4 @@
-import View, { Props } from "./View";
+import Box, { Props as BoxProps } from "./Box";
 
-export { Props };
-export default View;
+export { BoxProps };
+export default Box
