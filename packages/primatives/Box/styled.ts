@@ -10,10 +10,10 @@ const utilProps = system({
   },
 });
 
-const StyledProps = compose(space, color, layout, position, border, shadow, flexbox, utilProps);
+export const StyledBoxProps = compose(space, color, layout, position, border, shadow, flexbox, utilProps);
 
-export const StyledView = styled.div`
+export const StyledBox = styled.div`
   display: block;
   box-sizing: border-box;
-  ${StyledProps}
+  ${StyledBoxProps}
 `;
