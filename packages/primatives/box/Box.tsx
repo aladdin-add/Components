@@ -1,20 +1,21 @@
 import React, { ReactNode } from "react";
-import { 
-  SpaceProps, 
-  ColorProps, 
-  LayoutProps, 
-  PositionProps, 
+import {
+  SpaceProps,
+  ColorProps,
+  LayoutProps,
+  PositionProps,
   BorderProps,
   ShadowProps,
-  FlexboxProps
+  FlexboxProps,
 } from "styled-system";
 
 import { StyledBox } from "./styled";
 
-export interface Props extends 
-  SpaceProps, 
-  ColorProps, 
-  LayoutProps, 
+export interface Props 
+
+  extends SpaceProps,
+  ColorProps,
+  LayoutProps,
   PositionProps,
   BorderProps,
   ShadowProps,
@@ -25,8 +26,8 @@ export interface Props extends
   autoid: string;
 }
 
-const View = ({ children, as, autoid, ...rest }: Props) => (
-  <StyledBox data-autoid={autoid} as={as} {...rest as Array<Props>}>
+const Box = ({ children, as, autoid, ...rest }: Props) => (
+  <StyledBox data-autoid={autoid} as={as} {...(rest as Array<Props>)}>
     {children}
   </StyledBox>
 );
