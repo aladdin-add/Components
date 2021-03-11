@@ -22,6 +22,7 @@ export interface Props
   children: ReactNode;
   as?: any;
   autoid?: string;
+  className?: string;
 }
 
 const Box = ({ children, as, autoid, ...rest }: Props) => (

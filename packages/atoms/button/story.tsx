@@ -9,6 +9,6 @@ export default {
 
 export const Default = () => <Button>Default Button</Button>;
 
-export const Primary = () => <Button variant="primary">Primary Button</Button>;
+export const Primary = () => <Button variant="primary" bg="primary.0">Primary Button</Button>;
 
 export const Secondary = () => <Button variant="secondary">Secondary Button</Button>;

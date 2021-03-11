@@ -1,5 +1,3 @@
-import { getContrast } from "@aw-web-design/theme";
-
 const variants = {
   intents: {
     info: {
@@ -70,8 +68,7 @@ const variants = {
   },
   buttons: {
       primary: {
-          color: getContrast("primary.2"),
-          bg: "primary.0",
+          bg: "#fff",
           "&:hover": {
               bg: "primary.1",
               "&:disabled": {
@@ -89,7 +86,6 @@ const variants = {
           }
       },
       secondary: {
-          color: getContrast("highlights.0"),
           bg: "highlights.0",
           "&:hover": {
               bg: "highlights.1",

@@ -1,19 +1,19 @@
 import React, { ReactNode } from "react";
 import { ButtonStyleProps } from "styled-system";
 import Text from "@//primatives/text";
-import { BoxProps } from "@//primatives/box";
+import { InteractableProps } from "@/primatives/interactable";
 
 import { StyledInteractable } from "./styled";
 
-export interface Props extends BoxProps, ButtonStyleProps {
+export interface Props extends InteractableProps, ButtonStyleProps {
   children: ReactNode;
   iconName?: string;
   autoid?: string;
 }
 
-const Button = ({ children, iconName, autoid = "", ...rest }: Props) => {
+const Button = ({ className, children, iconName, autoid = "", ...rest }: Props) => {
   return (
-    <StyledInteractable forwardedAs="button" autoid={`${autoid}_button`} typography="button" {...rest}>
+    <StyledInteractable className={className} forwardedAs="button" autoid={`${autoid}_button`} typography="button" {...rest}>
       {typeof children === "string" ? <Text>{children}</Text> : { children }}
     </StyledInteractable>
   );

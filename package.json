@@ -8,7 +8,7 @@
     "lint:js": "eslint -c .eslintrc packages --ext .ts,.tsx --quiet",
     "lint:styled": "stylelint \"packages/**/styled.ts\"",
     "test": "jest --silent -u --passWithNoTests",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "yarn build:tokens && start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "repository": {
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/AW-Web-Design/Components#readme",
   "dependencies": {
-    "@aw-web-design/theme": "0.0.27",
+    "@aw-web-design/theme": "0.0.28",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^4.16.1",
     "copy-webpack-plugin": "^6.1.1",

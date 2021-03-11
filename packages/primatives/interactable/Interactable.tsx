@@ -7,7 +7,7 @@ export interface Props extends BoxProps {
   onClick?: () => void;
 }
 
-const Interactable = ({ children, onClick, ...rest }: Props) => {
+const Interactable = ({ className, children, onClick, ...rest }: Props) => {
   const handleOnClick = () => {
     if (onClick) {
       onClick();
@@ -15,7 +15,7 @@ const Interactable = ({ children, onClick, ...rest }: Props) => {
   };
 
   return (
-    <StyledInteractable onClick={handleOnClick} {...rest}>
+    <StyledInteractable className={className} onClick={handleOnClick} {...rest}>
       {children}
     </StyledInteractable>
   );
