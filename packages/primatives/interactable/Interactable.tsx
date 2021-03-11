@@ -1,5 +1,5 @@
-import React, { ReactNode } from "react";
-import { Props as BoxProps } from "@/Box";
+import React from "react";
+import { BoxProps } from "@//primatives/box";
 
 import { StyledInteractable } from "./styled";
 
@@ -7,8 +7,7 @@ export interface Props extends BoxProps {
   onClick?: () => void;
 }
 
-const Interactable = ({ children, onClick, ...rest }:Props) => {
-
+const Interactable = ({ children, onClick, ...rest }: Props) => {
   const handleOnClick = () => {
     if (onClick) {
       onClick();
@@ -16,7 +15,7 @@ const Interactable = ({ children, onClick, ...rest }:Props) => {
   };
 
   return (
-    <StyledInteractable {...rest} onClick={handleOnClick}>
+    <StyledInteractable onClick={handleOnClick} {...rest}>
       {children}
     </StyledInteractable>
   );

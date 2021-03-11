@@ -1,3 +1,5 @@
+import { getContrast } from "@aw-web-design/theme";
+
 const variants = {
   intents: {
     info: {
@@ -66,6 +68,46 @@ const variants = {
       },
     },
   },
+  buttons: {
+      primary: {
+          color: getContrast("primary.2"),
+          bg: "primary.0",
+          "&:hover": {
+              bg: "primary.1",
+              "&:disabled": {
+                  bg: "primary.0"
+              }
+          },
+          "&:active": {
+              bg: "primary.2",
+              "&:disabled": {
+                  bg: "primary.0"
+              }
+          },
+          "&::before": {
+              bg: "primary.1"
+          }
+      },
+      secondary: {
+          color: getContrast("highlights.0"),
+          bg: "highlights.0",
+          "&:hover": {
+              bg: "highlights.1",
+              "&:disabled": {
+                  bg: "highlights.0"
+              }
+          },
+          "&:active": {
+              bg: "highlights.2",
+              "&:disabled": {
+                  bg: "highlights.0"
+              }
+          },
+          "&::before": {
+              bg: "primary.1"
+          }
+      }
+  }
 };
 
 export default variants;

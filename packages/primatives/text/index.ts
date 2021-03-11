@@ -1,4 +1,4 @@
-import Text, { Props } from "./Text";
+import Text, { Props as TextProps } from "./Text";
 
-export { Props };
+export { TextProps };
 export default Text;

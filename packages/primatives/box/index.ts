@@ -1,5 +1,5 @@
 import Box, { Props as BoxProps } from "./Box";
-import { StyledBox, BoxStyledProps } from "./styled";
+import { StyledBox, StyledBoxProps } from "./styled";
 
-export { BoxProps, StyledBox, BoxStyledProps };
+export { BoxProps, StyledBox, StyledBoxProps };
 export default Box;
