@@ -1,8 +1,9 @@
 import React from "react";
 import { mount, shallow } from "enzyme";
-import { ThemeProvider } from "styled-components";
 
-import theme from "@//theme";
+import { ThemeProvider } from "@aw-web-design/theme/theme-provider";
+
+import theme from "@/theme";
 
 const removeProperties = () => {
   const keys = ["theme", "styledTheme"];
@@ -25,22 +26,13 @@ const removeProperties = () => {
   };
 };
 
-const formattedTheme = {
-  ...theme,
-  colors: {
-    common: theme.colors.common,
-    modes: theme.colors.modes,
-    ...theme.colors.modes.light,
-  },
-};
-
 export const shallowWithTheme = (children) =>
-  shallow(<ThemeProvider theme={formattedTheme}>{children}</ThemeProvider>)
+  shallow(<ThemeProvider theme={theme}>{children}</ThemeProvider>)
     .dive()
     .shallow();
 
 export const mountWithTheme = (children) => {
   expect.addSnapshotSerializer(removeProperties());
 
-  return mount(<ThemeProvider theme={formattedTheme}>{children}</ThemeProvider>);
+  return mount(<ThemeProvider theme={theme}>{children}</ThemeProvider>);
 };
