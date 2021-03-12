@@ -2,13 +2,13 @@
 # yarn lockfile v1
 
 
-"@aw-web-design/theme@0.0.28":
-  version "0.0.28"
-  resolved "https://registry.yarnpkg.com/@aw-web-design/theme/-/theme-0.0.28.tgz#1dfa5a1f4bb4e40605f11a8f007cd536561e4b67"
-  integrity sha512-iL4PTUZ+xTGdxSCindHUK5nrusFMaGb49vzT4vs49YuHUncpadUWJ1xhbEnKTQkOi1wcgunBFTVJs0Xy/3P5jg==
+"@aw-web-design/theme@0.0.30":
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/@aw-web-design/theme/-/theme-0.0.30.tgz#ba7bd0ab620cdb0d473ff0549e18cf1c50fc5e26"
+  integrity sha512-UB2r7vtl/WGUwIdh+lAsn99WeKrsoc5tN1UbdvHbmkyotbbg0rJjtcZRWacALk6smukMFjnr7HTc5O1eX0e2Qw==
   dependencies:
     "@types/react" "^17.0.3"
-    "@types/styled-components" "^5.1.7"
+    "@types/styled-components" "^5.1.8"
     "@types/styled-system" "^5.1.10"
     "@typescript-eslint/eslint-plugin" "^2.34.0"
     "@typescript-eslint/parser" "^2.34.0"
@@ -2286,10 +2286,10 @@
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-1.0.1.tgz#0a851d3bd96498fa25c33ab7278ed3bd65f06c3e"
   integrity sha512-l42BggppR6zLmpfU6fq9HEa2oGPEI8yrSPL3GITjfRInppYFahObbIQOQK3UGxEnyQpltZLaPe75046NOZQikw==
 
-"@types/styled-components@^5.1.7":
-  version "5.1.7"
-  resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-5.1.7.tgz#3cd10b088c1cb1acde2e4b166b3e8275a3083710"
-  integrity sha512-BJzPhFygYspyefAGFZTZ/8lCEY4Tk+Iqktvnko3xmJf9LrLqs3+grxPeU3O0zLl6yjbYBopD0/VikbHgXDbJtA==
+"@types/styled-components@^5.1.8":
+  version "5.1.8"
+  resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-5.1.8.tgz#41338fe060c543567ae94ab420036865a9b969d0"
+  integrity sha512-or4lQ12MhR4wTZ34rxRwI+Fw9vPqhd9WeEqFfF6yssDe1uS7L8p9YYMbmtDgHRbBKLR4aJIK8KHA0h9wSYifkg==
   dependencies:
     "@types/hoist-non-react-statics" "*"
     "@types/react" "*"
