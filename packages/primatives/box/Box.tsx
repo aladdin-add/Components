@@ -8,6 +8,7 @@ import {
   ShadowProps,
   FlexboxProps,
 } from "styled-system";
+import { generateAutomationId } from "@//utils/automation";
 
 import { StyledBox } from "./styled";
 
@@ -25,8 +26,8 @@ export interface Props
   className?: string;
 }
 
-const Box = ({ children, as, autoid, ...rest }: Props) => (
-  <StyledBox data-autoid={autoid} as={as} {...rest}>
+const Box = ({ children, as, autoid = "", ...rest }: Props) => (
+  <StyledBox data-autoid={generateAutomationId(autoid)} as={as} {...rest}>
     {children}
   </StyledBox>
 );

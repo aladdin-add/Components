@@ -1,5 +1,5 @@
-import React, { ReactNode, useContext } from "react";
-import { InteractableProps } from "@/primatives/interactable";
+import React, { ReactNode } from "react";
+import { InteractableProps } from "@//primatives/interactable";
 import Text from "@//primatives/text";
 
 import { StyledInteractable } from "./styled";
@@ -16,7 +16,7 @@ const Button = ({ className, children, iconName, autoid = "", ...rest }: Props) 
     <StyledInteractable
       className={className}
       forwardedAs="button"
-      autoid={`${autoid}_button`}
+      autoid={`${autoid || children}_button`}
       typography="button"
       {...rest}
     >

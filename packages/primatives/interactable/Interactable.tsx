@@ -1,5 +1,6 @@
 import React from "react";
 import { BoxProps } from "@//primatives/box";
+import { generateAutomationId } from "@//utils/automation";
 
 import { StyledInteractable } from "./styled";
 
@@ -7,7 +8,7 @@ export interface Props extends BoxProps {
   onClick?: () => void;
 }
 
-const Interactable = ({ className, children, onClick, ...rest }: Props) => {
+const Interactable = ({ className, children, autoid = "", onClick, ...rest }: Props) => {
   const handleOnClick = () => {
     if (onClick) {
       onClick();
@@ -15,7 +16,12 @@ const Interactable = ({ className, children, onClick, ...rest }: Props) => {
   };
 
   return (
-    <StyledInteractable className={className} onClick={handleOnClick} {...rest}>
+    <StyledInteractable
+      className={className}
+      onClick={handleOnClick}
+      data-autoid={generateAutomationId(autoid)}
+      {...rest}
+    >
       {children}
     </StyledInteractable>
   );
