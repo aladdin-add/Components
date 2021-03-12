@@ -18,6 +18,7 @@ function ThemedWrapper(props) {
         ...modeTheme,
         colors: {
             common: modeTheme.colors.common,
+            modes: modeTheme.colors.modes,
             ...modeTheme.colors.modes[isDark ? ThemeModeEnum.DARK : ThemeModeEnum.LIGHT]
         }
     }

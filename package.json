@@ -1,6 +1,6 @@
 {
   "name": "@aw-web-design/components",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "A component library",
   "scripts": {
     "build:tokens": "node ./node_modules/@aw-web-design/theme/generate",
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/AW-Web-Design/Components#readme",
   "dependencies": {
-    "@aw-web-design/theme": "0.0.28",
+    "@aw-web-design/theme": "0.0.30",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^4.16.1",
     "copy-webpack-plugin": "^6.1.1",

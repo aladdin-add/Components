@@ -7,4 +7,4 @@ export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
 }
 
-addDecorator(renderStory => <ThemedWrapper><div className="theme-wrapper">{renderStory()}</div></ThemedWrapper>);
+addDecorator(renderStory => <ThemedWrapper>{renderStory()}</ThemedWrapper>);

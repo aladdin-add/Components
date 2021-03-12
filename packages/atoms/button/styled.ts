@@ -1,34 +1,42 @@
-import styled from "styled-components";
-import { system, get, compose } from "styled-system";
-import { variant, getContrast } from "@aw-web-design/theme";
+import styled, { css } from "styled-components";
+import { variant } from "@aw-web-design/theme";
 import Interactable from "@//primatives/interactable";
 
-const config = {
-    bg: {
-        property: 'color',
-        scale: 'colors',
-        transform: (n, scale) => {
-            console.log(n, scale);
-            console.log(get(scale, n, n));
-            console.log(getContrast("#5a90b1"))
-            return getContrast(get(scale, n, n));
-        }
-    }
-}
+export const ButtonVariants = (theme) =>
+  variant({
+    prop: "variant",
+    variants: theme.variants.buttons(theme),
+  });
 
-const contrast = system(config as any);
+export const StyledInteractable = styled(Interactable)`
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+  min-height: ${(p) => p.theme.sizes[8]};
+  -webkit-font-smoothing: antialiased;
+  padding: ${(p) => p.theme.space[3]} ${(p) => p.theme.space[4]};
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  border: none;
+  border-radius: ${(p) => p.theme.radii[1]};
+  outline: none;
+  align-items: center;
+  justify-content: center;
 
-export const StyledInteractable = styled.div`
-    border: 1px solid #000;
-    border-radius: 5px;
+  &:disabled {
+    pointer-events: none;
+  }
 
-  ${variant({
-    prop: "typography",
-    scale: "typography.type",
-  })}
+  &:focus {
+    outline: none;
+  }
 
-  ${compose(
-      contrast
-  )}
-  
+  ${(p) => css`
+    ${variant({
+      prop: "typography",
+      scale: "typography.type",
+    })}
+    ${ButtonVariants(p.theme)}
+  `}
 `;
