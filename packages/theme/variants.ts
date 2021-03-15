@@ -1,3 +1,6 @@
+import { get } from "styled-system";
+import { getContrast } from "@aw-web-design/theme";
+
 const variants = {
   intents: {
     info: {
@@ -66,6 +69,47 @@ const variants = {
       },
     },
   },
+  buttons: (theme) => ({
+    default: {},
+    primary: {
+      color: getContrast(get(theme.colors, "primary.2", "background")),
+      bg: "primary.2",
+      "&:hover": {
+        bg: "primary.1",
+        "&:disabled": {
+          bg: "primary.0",
+        },
+      },
+      "&:active": {
+        bg: "primary.2",
+        "&:disabled": {
+          bg: "primary.0",
+        },
+      },
+      "&::before": {
+        bg: "primary.1",
+      },
+    },
+    secondary: {
+      color: getContrast(get(theme.colors, "highlights.0", "background")),
+      bg: "highlights.0",
+      "&:hover": {
+        bg: "highlights.1",
+        "&:disabled": {
+          bg: "highlights.0",
+        },
+      },
+      "&:active": {
+        bg: "highlights.2",
+        "&:disabled": {
+          bg: "highlights.0",
+        },
+      },
+      "&::before": {
+        bg: "primary.1",
+      },
+    },
+  }),
 };
 
 export default variants;

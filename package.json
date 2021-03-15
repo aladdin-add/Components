@@ -1,13 +1,15 @@
 {
   "name": "@aw-web-design/components",
-  "version": "0.0.13",
+  "version": "0.0.15",
   "description": "A component library",
   "scripts": {
     "build:tokens": "node ./node_modules/@aw-web-design/theme/generate",
     "lint": "yarn lint:js && yarn lint:styled",
-    "lint:js": "eslint -c .eslintrc packages --ext .ts,.tsx --quiet",
+    "lint:js": "eslint -c .eslintrc packages --ext .ts,.tsx --quiet --fix",
     "lint:styled": "stylelint \"packages/**/styled.ts\"",
-    "test": "jest --silent -u --passWithNoTests"
+    "test": "jest -u",
+    "storybook": "yarn build:tokens && start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,7 @@
   },
   "homepage": "https://github.com/AW-Web-Design/Components#readme",
   "dependencies": {
-    "@aw-web-design/theme": "0.0.27",
+    "@aw-web-design/theme": "0.0.30",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^4.17.0",
     "copy-webpack-plugin": "^8.0.0",
@@ -38,7 +40,11 @@
     "@babel/preset-env": "^7.13.10",
     "@babel/preset-react": "^7.12.13",
     "@babel/preset-typescript": "^7.13.0",
+    "@storybook/addon-actions": "^6.1.21",
     "@storybook/addon-docs": "6.1.21",
+    "@storybook/addon-essentials": "^6.1.21",
+    "@storybook/addon-links": "^6.1.21",
+    "@storybook/react": "^6.1.21",
     "@types/webpack": "^4.41.22",
     "@types/webpack-env": "^1.15.3",
     "babel-eslint": "^10.0.1",
