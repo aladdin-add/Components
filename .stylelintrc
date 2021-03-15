@@ -16,9 +16,6 @@
     "max-nesting-depth": 4,
     "property-no-unknown": null,
     "order/properties-alphabetical-order": null,
-    "declaration-property-value-blacklist": {
-      "/^border/": []
-    },
     "order/properties-order": [
       [
         {
