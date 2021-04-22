@@ -27,7 +27,7 @@
     "@typescript-eslint/parser": "^4.22.0",
     "copy-webpack-plugin": "^8.1.1",
     "csstype": "3.0.8",
-    "enhanced-resolve": "5.2.0",
+    "enhanced-resolve": "5.8.0",
     "react": "16.14.0",
     "react-dom": "16.13.1",
     "styled-components": "5.2.3",
