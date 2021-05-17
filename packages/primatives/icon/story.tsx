@@ -10,5 +10,6 @@ export default {
 export const Default = () => (
   <div>
     <Icon name="GitHub" />
+    <Icon name="GitHub" color="red" />
   </div>
 );

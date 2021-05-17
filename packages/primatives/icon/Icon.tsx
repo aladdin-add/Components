@@ -8,7 +8,6 @@ import { getIcon } from "./utils";
 import { SVG } from "./styled";
 
 export interface Props extends Omit<BoxProps, "children"> {
-  autoid?: string;
   name: string;
 }
 
@@ -19,7 +18,7 @@ const Icon = ({ autoid, name, ...rest }: Props) => {
 
   return (
     <Suspense fallback={<HelpCircle />}>
-      <SvgElement data-autoid={`${generateAutomationId(autoid ?? name)}`} {...rest} />
+      <SvgElement data-autoid={`${generateAutomationId(autoid ?? name)}_icon`} {...rest} />
     </Suspense>
   );
 };

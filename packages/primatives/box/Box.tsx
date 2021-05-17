@@ -26,8 +26,8 @@ export interface Props
   className?: string;
 }
 
-const Box = ({ children, as, autoid = "", ...rest }: Props) => (
-  <StyledBox data-autoid={generateAutomationId(autoid)} as={as} {...rest}>
+const Box = ({ children, as, autoid, ...rest }: Props) => (
+  <StyledBox data-autoid={generateAutomationId(autoid ?? "")} as={as} {...rest}>
     {children}
   </StyledBox>
 );
