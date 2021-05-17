@@ -1,12 +1,12 @@
 import React from "react";
-import { shallow } from "enzyme";
 import toJson from "enzyme-to-json";
+import { shallowWithTheme } from "@//test-tools";
 
 import Icon from "..";
 
 describe("<Icon />", () => {
   it("renders correctly", () => {
-    const wrapper = shallow(<Icon name="test" />);
+    const wrapper = shallowWithTheme(<Icon name="test" />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });
