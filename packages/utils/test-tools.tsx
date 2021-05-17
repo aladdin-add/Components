@@ -3,7 +3,7 @@ import { mount, shallow } from "enzyme";
 import { ThemeProvider } from "styled-components";
 import { ConfigContext } from "@//utils/context/config";
 import theme from "@//theme";
-import config from "../../orchard.theme.config.json";
+const config =  require("../../orchard.theme.config.json");
 
 const removeProperties = () => {
   const keys = ["theme", "styledTheme"];
@@ -34,15 +34,11 @@ const formattedTheme = {
   },
 };
 
-export const shallowWithTheme = (children) =>
-  shallow(
-    <ConfigContext.Provider value={config}>
+export const shallowWithTheme = (children) => shallow(
       <ThemeProvider theme={formattedTheme}>
         {children}
       </ThemeProvider>
-    </ConfigContext.Provider>
   )
-    .dive()
     .dive()
     .shallow();
 
