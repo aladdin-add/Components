@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { compose, color, layout, space, position, border, shadow, flexbox, system, get } from "styled-system";
+import { compose, color, layout, space, position, border, shadow, flexbox, system, get } from "@aw-web-design/styled-system";
 import { getContrast } from "@aw-web-design/theme";
 
 const utilProps = system({
