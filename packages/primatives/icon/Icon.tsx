@@ -14,8 +14,6 @@ export interface Props extends Omit<BoxProps, "children"> {
 const Icon = ({ autoid, name, ...rest }: Props) => {
   const config = useContext(ConfigContext);
 
-  console.log(config);
-
   const SvgElement = SVG(getIcon(config, name));
 
   return (
