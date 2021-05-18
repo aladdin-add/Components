@@ -11,5 +11,10 @@
     "include": [
       "packages/**/*.ts",
       "packages/**/*.tsx"
+    ],
+    "exclude": [
+      "packages/**/*.test.ts",
+      "packages/**/*.test.tsx",
+      "packages/utils/test-tools.tsx"
     ]
   }
