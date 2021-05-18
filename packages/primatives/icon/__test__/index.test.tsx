@@ -4,6 +4,8 @@ import { mountWithTheme } from "@//test-tools";
 
 import Icon from "..";
 
+jest.mock("../utils");
+
 describe("<Icon />", () => {
   it("renders correctly", () => {
     const wrapper = mountWithTheme(<Icon name="test" />);
