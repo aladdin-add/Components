@@ -1,0 +1,20 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "declaration": true,
+      "noEmit": false,
+      "emitDeclarationOnly": true,
+      "outDir": "build",
+      "rootDir": "./packages",
+      "types": ["react"]
+    },
+    "include": [
+      "packages/**/*.ts",
+      "packages/**/*.tsx"
+    ],
+    "exclude": [
+      "packages/**/*.test.ts",
+      "packages/**/*.test.tsx",
+      "packages/utils/test-tools.tsx"
+    ]
+  }
