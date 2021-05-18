@@ -12,6 +12,24 @@ module.exports = {
   webpackFinal: async config => {
       if (!config.module || !config.resolve) return config;
 
+      // Remove storybook svg loader
+        config.module.rules = config.module.rules.map(rule => {
+        if (rule.test.toString().includes("svg")) {
+            const test = rule.test
+            .toString()
+            .replace("svg|", "")
+            .replace(/\//g, "");
+            return { ...rule, test: new RegExp(test) };
+        } else {
+            return rule;
+        }
+        });
+
+        config.module.rules.push({
+      test: /\.svg$/,
+      loader: require.resolve("svg-react-loader"),
+    });
+
       config.resolve.plugins = [
           new AliasPlugin(
               "described-resolve",

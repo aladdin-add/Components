@@ -1,8 +1,10 @@
 import React from "react";
 import { mount, shallow } from "enzyme";
 import { ThemeProvider } from "styled-components";
-
+import { ConfigContext } from "@//utils/context/config";
 import theme from "@//theme";
+
+const config = require("../../orchard.theme.config.json");
 
 const removeProperties = () => {
   const keys = ["theme", "styledTheme"];
@@ -41,5 +43,9 @@ export const shallowWithTheme = (children) =>
 export const mountWithTheme = (children) => {
   expect.addSnapshotSerializer(removeProperties());
 
-  return mount(<ThemeProvider theme={formattedTheme}>{children}</ThemeProvider>);
+  return mount(
+    <ConfigContext.Provider value={config}>
+      <ThemeProvider theme={formattedTheme}>{children}</ThemeProvider>
+    </ConfigContext.Provider>,
+  );
 };

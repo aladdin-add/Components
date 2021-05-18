@@ -33,8 +33,7 @@
     }
   },
   "include": [
-    "packages",
-    "node_modules/@orchard"
+    "packages"
   ],
   "exclude": [
     "node_modules"

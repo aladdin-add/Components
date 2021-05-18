@@ -11,25 +11,25 @@ exports[`<Button /> renders default correctly 1`] = `
       <Interactable
         as="button"
         autoid="Default_button"
-        className="StyledInteractable-sc-1aesr5b-0 hrAmOg"
+        className="StyledInteractable-sc-1aesr5b-0 cKeYUV"
         typography="button"
       >
         <StyledInteractable
           as="button"
-          className="StyledInteractable-sc-1aesr5b-0 hrAmOg"
+          className="StyledInteractable-sc-1aesr5b-0 cKeYUV"
           data-autoid="default_button"
           onClick={[Function]}
           typography="button"
         >
           <button
-            className="StyledInteractable-vam1r0-0 StyledInteractable-sc-1aesr5b-0 hrAmOg"
+            className="StyledInteractable-vam1r0-0 StyledInteractable-sc-1aesr5b-0 cKeYUV"
             data-autoid="default_button"
             onClick={[Function]}
           >
             <Text>
               <StyledText>
                 <span
-                  className="StyledText-sc-1iyj5jb-0 kgronq"
+                  className="StyledText-sc-1iyj5jb-0 ftvizH"
                 >
                   Default
                 </span>
@@ -57,27 +57,27 @@ exports[`<Button /> renders primary correctly 1`] = `
       <Interactable
         as="button"
         autoid="Primary_button"
-        className="StyledInteractable-sc-1aesr5b-0 iuWzjO"
+        className="StyledInteractable-sc-1aesr5b-0 Ammzz"
         typography="button"
         variant="primary"
       >
         <StyledInteractable
           as="button"
-          className="StyledInteractable-sc-1aesr5b-0 iuWzjO"
+          className="StyledInteractable-sc-1aesr5b-0 Ammzz"
           data-autoid="primary_button"
           onClick={[Function]}
           typography="button"
           variant="primary"
         >
           <button
-            className="StyledInteractable-vam1r0-0 StyledInteractable-sc-1aesr5b-0 iuWzjO"
+            className="StyledInteractable-vam1r0-0 StyledInteractable-sc-1aesr5b-0 Ammzz"
             data-autoid="primary_button"
             onClick={[Function]}
           >
             <Text>
               <StyledText>
                 <span
-                  className="StyledText-sc-1iyj5jb-0 kgronq"
+                  className="StyledText-sc-1iyj5jb-0 ftvizH"
                 >
                   Primary
                 </span>
@@ -105,27 +105,27 @@ exports[`<Button /> renders secondary correctly 1`] = `
       <Interactable
         as="button"
         autoid="Secondary_button"
-        className="StyledInteractable-sc-1aesr5b-0 gvxuRm"
+        className="StyledInteractable-sc-1aesr5b-0 cRNIwr"
         typography="button"
         variant="secondary"
       >
         <StyledInteractable
           as="button"
-          className="StyledInteractable-sc-1aesr5b-0 gvxuRm"
+          className="StyledInteractable-sc-1aesr5b-0 cRNIwr"
           data-autoid="secondary_button"
           onClick={[Function]}
           typography="button"
           variant="secondary"
         >
           <button
-            className="StyledInteractable-vam1r0-0 StyledInteractable-sc-1aesr5b-0 gvxuRm"
+            className="StyledInteractable-vam1r0-0 StyledInteractable-sc-1aesr5b-0 cRNIwr"
             data-autoid="secondary_button"
             onClick={[Function]}
           >
             <Text>
               <StyledText>
                 <span
-                  className="StyledText-sc-1iyj5jb-0 kgronq"
+                  className="StyledText-sc-1iyj5jb-0 ftvizH"
                 >
                   Secondary
                 </span>
