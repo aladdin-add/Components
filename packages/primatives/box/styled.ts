@@ -12,7 +12,7 @@ const utilProps = system({
   bg: {
     property: "color",
     scale: "colors",
-    transform: (n, scale) => {
+    transform: (scale, n) => {
       return getContrast(get(scale, n, n), scale as any);
     },
   },
