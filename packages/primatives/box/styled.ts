@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { compose, color, layout, space, position, border, shadow, flexbox, system, get } from "styled-system";
+import { compose, color, layout, space, position, border, shadow, flexbox, system, get } from "@aw-web-design/styled-system";
 import { getContrast } from "@aw-web-design/theme";
 
 const utilProps = system({
@@ -12,7 +12,7 @@ const utilProps = system({
   bg: {
     property: "color",
     scale: "colors",
-    transform: (n, scale) => {
+    transform: (scale, n) => {
       return getContrast(get(scale, n, n), scale as any);
     },
   },

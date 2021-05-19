@@ -1,4 +1,4 @@
-import { get } from "styled-system";
+import { get } from "@aw-web-design/styled-system";
 import { getContrast } from "@aw-web-design/theme";
 
 const variants = {
