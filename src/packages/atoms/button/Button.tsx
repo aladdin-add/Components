@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import { InteractableProps } from "@/primatives/interactable";
 import Text from "@/primatives/text";
 

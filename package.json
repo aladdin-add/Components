@@ -13,6 +13,7 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
+    "build:tokens": "node ./node_modules/@aw-web-design/theme/dist/index.js",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
@@ -35,16 +36,16 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "tsdx",
+  "name": "@aw-web-design/components",
   "author": "The-Code-Monkey",
-  "module": "dist/tsdx.esm.js",
+  "module": "dist/components.esm.js",
   "size-limit": [
     {
-      "path": "dist/tsdx.cjs.production.min.js",
+      "path": "dist/components.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/tsdx.esm.js",
+      "path": "dist/components.esm.js",
       "limit": "10 KB"
     }
   ],
@@ -56,8 +57,10 @@
     "@storybook/addon-links": "^6.2.9",
     "@storybook/addons": "^6.2.9",
     "@storybook/react": "^6.2.9",
+    "@types/enzyme": "^3.10.8",
     "@types/react": "^17.0.6",
     "@types/react-dom": "^17.0.5",
+    "@types/styled-components": "^5.1.9",
     "babel-loader": "^8.2.2",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.2",
@@ -73,6 +76,8 @@
   "dependencies": {
     "@aw-web-design/styled-system": "^0.0.2",
     "@aw-web-design/theme": "^0.1.0-alpha-1",
+    "react-feather": "^2.0.9",
+    "react-lazy-named": "^1.2.2",
     "styled-components": "^5.3.0"
   }
 }
