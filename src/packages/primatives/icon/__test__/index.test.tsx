@@ -1,6 +1,6 @@
 import React from "react";
 import toJson from "enzyme-to-json";
-import { mountWithTheme } from "@//test-tools";
+import { mountWithTheme } from "@/test-tools";
 
 import Icon from "..";
 

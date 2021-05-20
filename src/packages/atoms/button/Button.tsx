@@ -1,13 +1,11 @@
 import React, { ReactNode } from "react";
-import { InteractableProps } from "@//primatives/interactable";
-import Text from "@//primatives/text";
+import { InteractableProps } from "@/primatives/interactable";
+import Text from "@/primatives/text";
 
 import { StyledInteractable } from "./styled";
 
 export interface Props extends InteractableProps {
-  children: ReactNode;
   iconName?: string;
-  autoid?: string;
   variant?: string;
 }
 

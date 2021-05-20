@@ -1,8 +1,8 @@
 import React from "react";
 import { mount, shallow } from "enzyme";
 import { ThemeProvider } from "styled-components";
-import { ConfigContext } from "@//utils/context/config";
-import theme from "@//theme";
+import { ConfigContext } from "@/utils/context/config";
+import theme from "@/theme";
 
 const config = require("../../orchard.theme.config.json");
 

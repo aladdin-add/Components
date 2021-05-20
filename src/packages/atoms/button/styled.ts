@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { variant } from "@aw-web-design/theme";
-import Interactable from "@//primatives/interactable";
+import Interactable from "@/primatives/interactable";
 
 export const ButtonVariants = (theme) =>
   variant({

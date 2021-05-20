@@ -8,7 +8,7 @@ import {
   ShadowProps,
   FlexboxProps,
 } from "@aw-web-design/styled-system";
-import { generateAutomationId } from "@//utils/automation";
+import { generateAutomationId } from "@/utils/automation";
 
 import { StyledBox } from "./styled";
 
