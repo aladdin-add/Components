@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode } from 'react';
 import {
   SpaceProps,
   ColorProps,
@@ -7,10 +7,10 @@ import {
   BorderProps,
   ShadowProps,
   FlexboxProps,
-} from "@aw-web-design/styled-system";
-import { generateAutomationId } from "@/utils/automation";
+} from '@aw-web-design/styled-system';
+import { generateAutomationId } from '@/utils/automation';
 
-import { StyledBox } from "./styled";
+import { StyledBox } from './styled';
 
 export interface Props
   extends SpaceProps,
@@ -27,7 +27,7 @@ export interface Props
 }
 
 const Box = ({ children, as, autoid, ...rest }: Props) => (
-  <StyledBox data-autoid={generateAutomationId(autoid ?? "")} as={as} {...rest}>
+  <StyledBox data-autoid={generateAutomationId(autoid ?? '')} as={as} {...rest}>
     {children}
   </StyledBox>
 );

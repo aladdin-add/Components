@@ -1,15 +1,21 @@
-import React from "react";
-import { InteractableProps } from "@/primatives/interactable";
-import Text from "@/primatives/text";
+import React from 'react';
+import { InteractableProps } from '@/primatives/interactable';
+import Text from '@/primatives/text';
 
-import { StyledInteractable } from "./styled";
+import { StyledInteractable } from './styled';
 
 export interface Props extends InteractableProps {
   iconName?: string;
   variant?: string;
 }
 
-const Button = ({ className, children, iconName, autoid = "", ...rest }: Props) => {
+const Button = ({
+  className,
+  children,
+  iconName,
+  autoid = '',
+  ...rest
+}: Props) => {
   return (
     <StyledInteractable
       className={className}
@@ -18,7 +24,7 @@ const Button = ({ className, children, iconName, autoid = "", ...rest }: Props) 
       typography="button"
       {...rest}
     >
-      {typeof children === "string" ? <Text>{children}</Text> : { children }}
+      {typeof children === 'string' ? <Text>{children}</Text> : { children }}
     </StyledInteractable>
   );
 };

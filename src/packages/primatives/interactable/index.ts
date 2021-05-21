@@ -1,4 +1,4 @@
-import Interactable, { Props as InteractableProps } from "./Interactable";
+import Interactable, { Props as InteractableProps } from './Interactable';
 
 export default Interactable;
 export { InteractableProps };

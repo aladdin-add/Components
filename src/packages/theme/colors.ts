@@ -1,14 +1,14 @@
-import common from "./dist/core";
-import neutrals from "./dist/neutrals";
-import intents from "./dist/intents";
-import darkMode from "./dist/dark-mode";
-import lightMode from "./dist/light-mode";
+import common from './dist/core';
+import neutrals from './dist/neutrals';
+import intents from './dist/intents';
+import darkMode from './dist/dark-mode';
+import lightMode from './dist/light-mode';
 
 const colors = {
   common: common.common,
   modes: {
     light: {
-      mode: "light",
+      mode: 'light',
       ...lightMode,
       neutrals: neutrals.neutrals.light,
       intents: {
@@ -19,7 +19,7 @@ const colors = {
       },
     },
     dark: {
-      mode: "dark",
+      mode: 'dark',
       ...darkMode,
       neutrals: neutrals.neutrals.dark,
       intents: {

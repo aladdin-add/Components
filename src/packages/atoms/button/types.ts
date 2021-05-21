@@ -1,3 +1,3 @@
-import { Props as ButtonProps } from "./Button";
+import { Props as ButtonProps } from './Button';
 
 export type ButtonStyleProps = ButtonProps;
