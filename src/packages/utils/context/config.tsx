@@ -1,3 +1,7 @@
 import { createContext } from 'react';
 
-export const ConfigContext = createContext<any>(null);
+export interface Context {
+    iconDir?: string;
+}
+
+export const ConfigContext = createContext<Context | null>(null);

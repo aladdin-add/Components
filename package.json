@@ -12,8 +12,8 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build",
-    "build:tokens": "node ./node_modules/@aw-web-design/theme/dist/index.js",
+    "build": "yarn build:tokens && tsdx build",
+    "build:tokens": "node ./node_modules/@aw-web-design/theme/dist/cli.js generate",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "tsdx build",

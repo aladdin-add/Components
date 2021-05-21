@@ -1,7 +1,7 @@
 import lazy from 'react-lazy-named';
 
-export const getIcon = (config, name) => {
-  if (config.iconDir) {
+export const getIcon = (config: import("../../utils").Context | null, name: string) => {
+  if (config?.iconDir) {
     switch (config.iconDir) {
       default:
         return lazy(() => import('react-feather'), name);

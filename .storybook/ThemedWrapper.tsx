@@ -3,8 +3,8 @@ import addons from "@storybook/addons";
 import { ThemeProvider } from "styled-components";
 import { ThemeModeEnum } from "@aw-web-design/theme/enums/themeModeEnum"
 
-import { ConfigContext } from "../packages/utils/context/config";
-import modeTheme from "../packages/theme";
+import { ConfigContext } from "../src/packages/utils/context/config";
+import modeTheme from "../src/packages/theme";
 import config from "../orchard.theme.config.json";
 
 const channel = addons.getChannel();
