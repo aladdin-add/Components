@@ -8,15 +8,15 @@ exports[`<Icon /> renders correctly 1`] = `
     <Suspense
       fallback={<HelpCircle />}
     >
-      <SVG
+      <Styled(GitHub)
         data-autoid="test_icon"
       >
         <GitHub
-          className="SVG-sc-1u9ii4l-0 jIglCJ"
+          className="sc-gtsrHT iGOlee"
           data-autoid="test_icon"
         >
           <svg
-            className="SVG-sc-1u9ii4l-0 jIglCJ"
+            className="sc-gtsrHT iGOlee"
             data-autoid="test_icon"
             fill="none"
             height={24}
@@ -33,7 +33,7 @@ exports[`<Icon /> renders correctly 1`] = `
             />
           </svg>
         </GitHub>
-      </SVG>
+      </Styled(GitHub)>
     </Suspense>
   </Icon>
 </Component>

@@ -3,7 +3,7 @@
 exports[`<Button /> renders default correctly 1`] = `
 <Component>
   <Button>
-    <StyledInteractable
+    <Styled(Interactable)
       autoid="Default_button"
       forwardedAs="button"
       typography="button"
@@ -11,34 +11,34 @@ exports[`<Button /> renders default correctly 1`] = `
       <Interactable
         as="button"
         autoid="Default_button"
-        className="StyledInteractable-sc-1aesr5b-0 cKeYUV"
+        className="sc-hKFxyN eyTgNS"
         typography="button"
       >
-        <StyledInteractable
+        <styled.div
           as="button"
-          className="StyledInteractable-sc-1aesr5b-0 cKeYUV"
+          className="sc-hKFxyN eyTgNS"
           data-autoid="default_button"
           onClick={[Function]}
           typography="button"
         >
           <button
-            className="StyledInteractable-vam1r0-0 StyledInteractable-sc-1aesr5b-0 cKeYUV"
+            className="sc-dlnjwi bUluch sc-hKFxyN eyTgNS"
             data-autoid="default_button"
             onClick={[Function]}
           >
             <Text>
-              <StyledText>
+              <styled.span>
                 <span
-                  className="StyledText-sc-1iyj5jb-0 ftvizH"
+                  className="sc-bdnxRM eZabTl"
                 >
                   Default
                 </span>
-              </StyledText>
+              </styled.span>
             </Text>
           </button>
-        </StyledInteractable>
+        </styled.div>
       </Interactable>
-    </StyledInteractable>
+    </Styled(Interactable)>
   </Button>
 </Component>
 `;
@@ -48,7 +48,7 @@ exports[`<Button /> renders primary correctly 1`] = `
   <Button
     variant="primary"
   >
-    <StyledInteractable
+    <Styled(Interactable)
       autoid="Primary_button"
       forwardedAs="button"
       typography="button"
@@ -57,36 +57,36 @@ exports[`<Button /> renders primary correctly 1`] = `
       <Interactable
         as="button"
         autoid="Primary_button"
-        className="StyledInteractable-sc-1aesr5b-0 Ammzz"
+        className="sc-hKFxyN bkQBjU"
         typography="button"
         variant="primary"
       >
-        <StyledInteractable
+        <styled.div
           as="button"
-          className="StyledInteractable-sc-1aesr5b-0 Ammzz"
+          className="sc-hKFxyN bkQBjU"
           data-autoid="primary_button"
           onClick={[Function]}
           typography="button"
           variant="primary"
         >
           <button
-            className="StyledInteractable-vam1r0-0 StyledInteractable-sc-1aesr5b-0 Ammzz"
+            className="sc-dlnjwi bUluch sc-hKFxyN bkQBjU"
             data-autoid="primary_button"
             onClick={[Function]}
           >
             <Text>
-              <StyledText>
+              <styled.span>
                 <span
-                  className="StyledText-sc-1iyj5jb-0 ftvizH"
+                  className="sc-bdnxRM eZabTl"
                 >
                   Primary
                 </span>
-              </StyledText>
+              </styled.span>
             </Text>
           </button>
-        </StyledInteractable>
+        </styled.div>
       </Interactable>
-    </StyledInteractable>
+    </Styled(Interactable)>
   </Button>
 </Component>
 `;
@@ -96,7 +96,7 @@ exports[`<Button /> renders secondary correctly 1`] = `
   <Button
     variant="secondary"
   >
-    <StyledInteractable
+    <Styled(Interactable)
       autoid="Secondary_button"
       forwardedAs="button"
       typography="button"
@@ -105,36 +105,36 @@ exports[`<Button /> renders secondary correctly 1`] = `
       <Interactable
         as="button"
         autoid="Secondary_button"
-        className="StyledInteractable-sc-1aesr5b-0 cRNIwr"
+        className="sc-hKFxyN bUpehk"
         typography="button"
         variant="secondary"
       >
-        <StyledInteractable
+        <styled.div
           as="button"
-          className="StyledInteractable-sc-1aesr5b-0 cRNIwr"
+          className="sc-hKFxyN bUpehk"
           data-autoid="secondary_button"
           onClick={[Function]}
           typography="button"
           variant="secondary"
         >
           <button
-            className="StyledInteractable-vam1r0-0 StyledInteractable-sc-1aesr5b-0 cRNIwr"
+            className="sc-dlnjwi bUluch sc-hKFxyN bUpehk"
             data-autoid="secondary_button"
             onClick={[Function]}
           >
             <Text>
-              <StyledText>
+              <styled.span>
                 <span
-                  className="StyledText-sc-1iyj5jb-0 ftvizH"
+                  className="sc-bdnxRM eZabTl"
                 >
                   Secondary
                 </span>
-              </StyledText>
+              </styled.span>
             </Text>
           </button>
-        </StyledInteractable>
+        </styled.div>
       </Interactable>
-    </StyledInteractable>
+    </Styled(Interactable)>
   </Button>
 </Component>
 `;

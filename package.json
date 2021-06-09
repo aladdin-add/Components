@@ -8,14 +8,14 @@
     "src"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "scripts": {
     "start": "tsdx watch",
     "build": "yarn build:tokens && tsdx build",
     "build:tokens": "node ./node_modules/@aw-web-design/theme/dist/cli.js generate",
-    "test": "tsdx test --passWithNoTests",
-    "lint": "tsdx lint",
+    "test": "yarn build:tokens && tsdx test",
+    "lint": "yarn build:tokens && tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
@@ -49,6 +49,14 @@
       "limit": "10 KB"
     }
   ],
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/setupTests.js"
+    ],
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/packages/$1"
+    }
+  },
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@size-limit/preset-small-lib": "^4.10.2",
@@ -61,6 +69,7 @@
     "@types/react": "^17.0.6",
     "@types/react-dom": "^17.0.5",
     "@types/styled-components": "^5.1.9",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.1",
     "babel-loader": "^8.2.2",
     "babel-plugin-module-resolver": "^4.1.0",
     "enzyme": "^3.11.0",

@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { ConfigContext } from '@/utils/context/config';
 import theme from '@/theme';
 
-const config = require('../../orchard.theme.config.json');
+const config = require('../../../orchard.theme.config.json');
 
 const removeProperties = () => {
   const keys = ['theme', 'styledTheme'];
