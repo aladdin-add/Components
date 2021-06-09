@@ -1,12 +1,20 @@
 import styled, { css } from 'styled-components';
-import { variant } from '@aw-web-design/theme';
+import { variant, Theme } from '@aw-web-design/styled-system';
 import Interactable from '@/primatives/interactable';
 
-export const ButtonVariants = theme =>
-  variant({
-    prop: 'variant',
-    variants: theme.variants.buttons(theme),
-  });
+export const ButtonVariants = (theme: Theme) => {
+    if (typeof theme.variants?.buttons === "function") {
+        return variant({
+            // @ts-ignore
+            variants: theme.variants?.buttons(theme)
+        })
+    } else {
+        return variant({
+            // @ts-ignore
+            variants: theme.variants?.buttons,
+        });
+    }
+}
 
 export const StyledInteractable = styled(Interactable)`
   position: relative;

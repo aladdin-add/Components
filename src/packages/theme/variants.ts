@@ -1,4 +1,4 @@
-import { get } from '@aw-web-design/styled-system';
+import { get, Theme } from '@aw-web-design/styled-system';
 import { getContrast } from '@aw-web-design/theme';
 
 const variants = {
@@ -69,7 +69,7 @@ const variants = {
       },
     },
   },
-  buttons: theme => ({
+  buttons: (theme: Theme) => ({
     default: {},
     primary: {
       color: getContrast(get(theme.colors, 'primary.2', 'background')),
