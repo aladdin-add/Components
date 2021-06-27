@@ -1,7 +1,6 @@
 import React, { useEffect, useState, createContext } from "react";
 import addons from "@storybook/addons";
 import { ThemeProvider } from "styled-components";
-import { ThemeModeEnum } from "@aw-web-design/theme/enums/themeModeEnum"
 
 import { ConfigContext } from "../src/packages/utils/context/config";
 import modeTheme from "../src/packages/theme";
@@ -21,8 +20,8 @@ function ThemedWrapper(props) {
         colors: {
             common: modeTheme.colors.common,
             modes: modeTheme.colors.modes,
-            ...modeTheme.colors.modes[isDark ? ThemeModeEnum.DARK : ThemeModeEnum.LIGHT]
-        }
+            ...modeTheme.colors.modes[isDark ? "dark" : "light"]
+       }
     }
 
     return (
