@@ -2,7 +2,7 @@ import React from 'react';
 import toJson from 'enzyme-to-json';
 import { mountWithTheme } from '@/utils/test-tools';
 
-import Button from '..';
+import Button from '../';
 
 describe('<Button />', () => {
   it('renders default correctly', () => {
