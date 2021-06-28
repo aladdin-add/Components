@@ -6,6 +6,6 @@ module.exports = {
                 root: "./",
                 alias: require("./tsconfig.json").compilerOptions.paths
             }
-        ]
+        ],
     ]
 }

@@ -70,7 +70,9 @@ const variants = {
     },
   },
   buttons: (theme: Theme) => ({
-    default: {},
+    default: {
+        bg: 'neutrals.1'
+    },
     primary: {
       color: getContrast(get(theme.colors, 'primary.2', 'background')),
       bg: 'primary.2',

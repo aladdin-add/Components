@@ -14,6 +14,7 @@ const Button = ({
   children,
   iconName,
   autoid = '',
+  variant = "default",
   ...rest
 }: Props) => {
   return (
@@ -22,6 +23,7 @@ const Button = ({
       forwardedAs="button"
       autoid={`${autoid || children}_button`}
       typography="button"
+      variant={variant}
       {...rest}
     >
       {typeof children === 'string' ? <Text>{children}</Text> : { children }}

@@ -1,10 +1,14 @@
 import React, { ReactNode } from 'react';
-import { mount, shallow } from 'enzyme';
+import { mount, shallow, ShallowWrapper, ReactWrapper } from 'enzyme';
 import { ThemeProvider } from 'styled-components';
 import { ConfigContext } from '@/utils/context/config';
 import theme from '@/theme';
 
-const config = require('../../../orchard.theme.config.json');
+const config = {
+  "outputDir": "/src/packages/",
+  "iconDir": "feather"
+}
+
 
 const removeProperties = () => {
   const keys = ['theme', 'styledTheme'];
@@ -35,12 +39,12 @@ const formattedTheme = {
   },
 };
 
-export const shallowWithTheme = (children: ReactNode) =>
+export const shallowWithTheme: (children: ReactNode) => ShallowWrapper  = (children: ReactNode) =>
   shallow(<ThemeProvider theme={formattedTheme}>{children}</ThemeProvider>)
     .dive()
     .shallow();
 
-export const mountWithTheme = (children: ReactNode) => {
+export const mountWithTheme: (children: ReactNode) => ReactWrapper = (children: ReactNode) => {
   expect.addSnapshotSerializer(removeProperties());
 
   return mount(

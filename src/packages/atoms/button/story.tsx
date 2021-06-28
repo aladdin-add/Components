@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Button from '.';
+import Button from './';
 
 export default {
-  title: 'Components | Atoms / Button',
+  title: 'Components / Atoms / Button',
   component: Button,
 };
 
