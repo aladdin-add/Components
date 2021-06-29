@@ -16,8 +16,6 @@ const Icon = ({ autoid, name, ...rest }: Props) => {
 
   const Element = useMemo(() => getIcon(config, name), [config, name]);
 
-  console.log(Element);
-
   return (
     <Suspense fallback={<HelpCircle />}>
       <SvgWrapper
