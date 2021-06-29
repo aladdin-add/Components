@@ -4,16 +4,15 @@ const Path = require("path");
 
 const dirs = [
   "packages/",
-  "packages/primatives/",
   "packages/atoms/",
   "packages/molecules/",
   "packages/organisms/",
   "packages/utils/",
 ];
 
-const extensions = ["tsx", "ts"];
+const extensions = ["ts", "tsx"];
 
-module.exports = function(importPath, opts) {
+module.exports = function (importPath, opts) {
   if (importPath.includes("@/")) {
     for (let i = 0; i < dirs.length; i++) {
       const dir = dirs[i];
