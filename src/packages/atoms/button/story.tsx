@@ -14,3 +14,12 @@ export const Primary = () => <Button variant="primary">Primary Button</Button>;
 export const Secondary = () => (
   <Button variant="secondary">Secondary Button</Button>
 );
+
+export const IconButtons = () => {
+    <>
+        <Button iconName="GitHub">left</Button>
+        <Button iconName="GitHub" iconPosition="top">top</Button>
+        <Button iconName="GitHub" iconPosition="right">right</Button>
+        <Button iconName="GitHub" iconPosition="bottom">bottom</Button>
+    </>
+}

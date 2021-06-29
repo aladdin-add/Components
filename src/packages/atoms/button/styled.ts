@@ -2,6 +2,25 @@ import styled, { css } from 'styled-components';
 import { variant, Theme } from '@aw-web-design/styled-system';
 import Interactable from '@/primatives/interactable';
 
+export const iconOrientations = {
+  top: {
+    flexDirection: "column-reverse",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  bottom: {
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  left: {
+    flexDirection: "row-reverse",
+  },
+  right: {
+    flexDirection: "row",
+  },
+};
+
 export const ButtonVariants = (theme: Theme) => {
   if (typeof theme.variants?.buttons === 'function') {
     return variant({
