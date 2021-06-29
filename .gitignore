@@ -1,5 +1,6 @@
+*.log
+.DS_Store
 node_modules
-theme
+.cache
 dist
-build
-yarn-error.log
+storybook-static

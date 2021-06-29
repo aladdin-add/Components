@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> renders default correctly 1`] = `
+<Component>
+  <Button>
+    <Styled(Interactable)
+      autoid="Default_button"
+      forwardedAs="button"
+      typography="button"
+      variant="default"
+    >
+      <Interactable
+        as="button"
+        autoid="Default_button"
+        className="sc-hKFxyN iXFsit"
+        typography="button"
+        variant="default"
+      >
+        <styled.div
+          as="button"
+          className="sc-hKFxyN iXFsit"
+          data-autoid="default_button"
+          onClick={[Function]}
+          typography="button"
+          variant="default"
+        >
+          <button
+            className="sc-dlnjwi bUluch sc-hKFxyN iXFsit"
+            data-autoid="default_button"
+            onClick={[Function]}
+          >
+            <Text>
+              <styled.span>
+                <span
+                  className="sc-bdnxRM eZabTl"
+                >
+                  Default
+                </span>
+              </styled.span>
+            </Text>
+          </button>
+        </styled.div>
+      </Interactable>
+    </Styled(Interactable)>
+  </Button>
+</Component>
+`;
+
+exports[`<Button /> renders primary correctly 1`] = `
+<Component>
+  <Button
+    variant="primary"
+  >
+    <Styled(Interactable)
+      autoid="Primary_button"
+      forwardedAs="button"
+      typography="button"
+      variant="primary"
+    >
+      <Interactable
+        as="button"
+        autoid="Primary_button"
+        className="sc-hKFxyN bkQBjU"
+        typography="button"
+        variant="primary"
+      >
+        <styled.div
+          as="button"
+          className="sc-hKFxyN bkQBjU"
+          data-autoid="primary_button"
+          onClick={[Function]}
+          typography="button"
+          variant="primary"
+        >
+          <button
+            className="sc-dlnjwi bUluch sc-hKFxyN bkQBjU"
+            data-autoid="primary_button"
+            onClick={[Function]}
+          >
+            <Text>
+              <styled.span>
+                <span
+                  className="sc-bdnxRM eZabTl"
+                >
+                  Primary
+                </span>
+              </styled.span>
+            </Text>
+          </button>
+        </styled.div>
+      </Interactable>
+    </Styled(Interactable)>
+  </Button>
+</Component>
+`;
+
+exports[`<Button /> renders secondary correctly 1`] = `
+<Component>
+  <Button
+    variant="secondary"
+  >
+    <Styled(Interactable)
+      autoid="Secondary_button"
+      forwardedAs="button"
+      typography="button"
+      variant="secondary"
+    >
+      <Interactable
+        as="button"
+        autoid="Secondary_button"
+        className="sc-hKFxyN bUpehk"
+        typography="button"
+        variant="secondary"
+      >
+        <styled.div
+          as="button"
+          className="sc-hKFxyN bUpehk"
+          data-autoid="secondary_button"
+          onClick={[Function]}
+          typography="button"
+          variant="secondary"
+        >
+          <button
+            className="sc-dlnjwi bUluch sc-hKFxyN bUpehk"
+            data-autoid="secondary_button"
+            onClick={[Function]}
+          >
+            <Text>
+              <styled.span>
+                <span
+                  className="sc-bdnxRM eZabTl"
+                >
+                  Secondary
+                </span>
+              </styled.span>
+            </Text>
+          </button>
+        </styled.div>
+      </Interactable>
+    </Styled(Interactable)>
+  </Button>
+</Component>
+`;

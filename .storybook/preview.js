@@ -4,7 +4,7 @@ import { addDecorator } from "@storybook/react";
 import ThemedWrapper from "./ThemedWrapper";
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
-}
+  actions: { argTypesRegex: '^on.*' },
+};
 
 addDecorator(renderStory => <ThemedWrapper>{renderStory()}</ThemedWrapper>);
