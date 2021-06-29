@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 import { IntentVariants } from '@aw-web-design/styled-system';
-import { StyledBoxProps } from '@/primatives/box';
+import Box, { StyledBoxProps } from '@/primatives/box';
 
-export const SVG = (Element: any) => styled(Element)`
-  fill: currentColor;
+export const SvgWrapper = styled(Box)`
+  svg {
+    fill: currentColor;
 
-  ${IntentVariants}
-  ${StyledBoxProps}
+    ${IntentVariants}
+    ${StyledBoxProps}
+  }
 `;

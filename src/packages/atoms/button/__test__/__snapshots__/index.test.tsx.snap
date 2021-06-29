@@ -7,22 +7,25 @@ exports[`<Button /> renders default correctly 1`] = `
       autoid="Default_button"
       forwardedAs="button"
       typography="button"
+      variant="default"
     >
       <Interactable
         as="button"
         autoid="Default_button"
-        className="sc-hKFxyN eyTgNS"
+        className="sc-hKFxyN iXFsit"
         typography="button"
+        variant="default"
       >
         <styled.div
           as="button"
-          className="sc-hKFxyN eyTgNS"
+          className="sc-hKFxyN iXFsit"
           data-autoid="default_button"
           onClick={[Function]}
           typography="button"
+          variant="default"
         >
           <button
-            className="sc-dlnjwi bUluch sc-hKFxyN eyTgNS"
+            className="sc-dlnjwi bUluch sc-hKFxyN iXFsit"
             data-autoid="default_button"
             onClick={[Function]}
           >

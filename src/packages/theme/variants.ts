@@ -71,7 +71,7 @@ const variants = {
   },
   buttons: (theme: Theme) => ({
     default: {
-        bg: 'neutrals.1'
+      bg: 'neutrals.1',
     },
     primary: {
       color: getContrast(get(theme.colors, 'primary.2', 'background')),

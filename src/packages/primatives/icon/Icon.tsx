@@ -1,11 +1,11 @@
-import React, { useContext, Suspense } from 'react';
+import React, { useContext, Suspense, useMemo } from 'react';
 import { HelpCircle } from 'react-feather';
 import { generateAutomationId } from '@/utils/automation';
 import { BoxProps } from '@/primatives/box';
 import { ConfigContext } from '@/utils/context/config';
 
 import { getIcon } from './utils';
-import { SVG } from './styled';
+import { SvgWrapper } from './styled';
 
 export interface Props extends Omit<BoxProps, 'children'> {
   name: string;
@@ -14,14 +14,18 @@ export interface Props extends Omit<BoxProps, 'children'> {
 const Icon = ({ autoid, name, ...rest }: Props) => {
   const config = useContext(ConfigContext);
 
-  const SvgElement = SVG(getIcon(config, name));
+  const Element = useMemo(() => getIcon(config, name), [config, name]);
+
+  console.log(Element);
 
   return (
     <Suspense fallback={<HelpCircle />}>
-      <SvgElement
-        data-autoid={`${generateAutomationId(autoid ?? name)}_icon`}
+      <SvgWrapper
+        autoid={`${generateAutomationId(autoid ?? name)}_icon`}
         {...rest}
-      />
+      >
+        <Element />
+      </SvgWrapper>
     </Suspense>
   );
 };

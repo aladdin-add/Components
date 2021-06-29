@@ -14,7 +14,7 @@ const Button = ({
   children,
   iconName,
   autoid = '',
-  variant = "default",
+  variant = 'default',
   ...rest
 }: Props) => {
   return (

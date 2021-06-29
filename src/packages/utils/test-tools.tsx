@@ -5,10 +5,9 @@ import { ConfigContext } from '@/utils/context/config';
 import theme from '@/theme';
 
 const config = {
-  "outputDir": "/src/packages/",
-  "iconDir": "feather"
-}
-
+  outputDir: '/src/packages/',
+  iconDir: 'feather',
+};
 
 const removeProperties = () => {
   const keys = ['theme', 'styledTheme'];
@@ -18,11 +17,11 @@ const removeProperties = () => {
         val &&
         typeof val === 'object' &&
         'props' in val &&
-        Object.keys(val.props).some(prop => keys.some(key => key === prop))
+        Object.keys(val.props).some((prop) => keys.some((key) => key === prop))
       );
     },
     print: (val: any, serialize: any) => {
-      keys.forEach(key => {
+      keys.forEach((key) => {
         delete val.props[key];
       });
       return serialize(val);
@@ -39,12 +38,16 @@ const formattedTheme = {
   },
 };
 
-export const shallowWithTheme: (children: ReactNode) => ShallowWrapper  = (children: ReactNode) =>
+export const shallowWithTheme: (children: ReactNode) => ShallowWrapper = (
+  children: ReactNode
+) =>
   shallow(<ThemeProvider theme={formattedTheme}>{children}</ThemeProvider>)
     .dive()
     .shallow();
 
-export const mountWithTheme: (children: ReactNode) => ReactWrapper = (children: ReactNode) => {
+export const mountWithTheme: (children: ReactNode) => ReactWrapper = (
+  children: ReactNode
+) => {
   expect.addSnapshotSerializer(removeProperties());
 
   return mount(
