@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Grid /> renders correctly 1`] = `
+<Component>
+  <Grid
+    columns={
+      Array [
+        "auto",
+        "1fr 1fr",
+        "1fr 1fr 2fr",
+      ]
+    }
+  >
+    <Styled(Box)
+      autoid="undefined_table"
+      display="grid"
+      gridTemplateColumns={
+        Array [
+          "auto",
+          "1fr 1fr",
+          "1fr 1fr 2fr",
+        ]
+      }
+    >
+      <Box
+        autoid="undefined_table"
+        className="sc-eCApnc iRzZlc"
+        display="grid"
+        gridTemplateColumns={
+          Array [
+            "auto",
+            "1fr 1fr",
+            "1fr 1fr 2fr",
+          ]
+        }
+      >
+        <styled.div
+          className="sc-eCApnc iRzZlc"
+          data-autoid="undefined_table"
+          display="grid"
+          gridTemplateColumns={
+            Array [
+              "auto",
+              "1fr 1fr",
+              "1fr 1fr 2fr",
+            ]
+          }
+        >
+          <div
+            className="sc-bdnxRM igMDoM sc-eCApnc iRzZlc"
+            data-autoid="undefined_table"
+            display="grid"
+          >
+            <Cell>
+              <Styled(Box)
+                autoid="Cell 1_cell"
+                display="flex"
+                gridColumn="span 1"
+                gridRow="span 1"
+              >
+                <Box
+                  autoid="Cell 1_cell"
+                  className="sc-jSFjdj GVHQI"
+                  display="flex"
+                  gridColumn="span 1"
+                  gridRow="span 1"
+                >
+                  <styled.div
+                    className="sc-jSFjdj GVHQI"
+                    data-autoid="cell_1_cell"
+                    display="flex"
+                    gridColumn="span 1"
+                    gridRow="span 1"
+                  >
+                    <div
+                      className="sc-bdnxRM frecOH sc-jSFjdj GVHQI"
+                      data-autoid="cell_1_cell"
+                      display="flex"
+                    >
+                      Cell 1
+                    </div>
+                  </styled.div>
+                </Box>
+              </Styled(Box)>
+            </Cell>
+            <Cell>
+              <Styled(Box)
+                autoid="Cell 2_cell"
+                display="flex"
+                gridColumn="span 1"
+                gridRow="span 1"
+              >
+                <Box
+                  autoid="Cell 2_cell"
+                  className="sc-jSFjdj GVHQI"
+                  display="flex"
+                  gridColumn="span 1"
+                  gridRow="span 1"
+                >
+                  <styled.div
+                    className="sc-jSFjdj GVHQI"
+                    data-autoid="cell_2_cell"
+                    display="flex"
+                    gridColumn="span 1"
+                    gridRow="span 1"
+                  >
+                    <div
+                      className="sc-bdnxRM frecOH sc-jSFjdj GVHQI"
+                      data-autoid="cell_2_cell"
+                      display="flex"
+                    >
+                      Cell 2
+                    </div>
+                  </styled.div>
+                </Box>
+              </Styled(Box)>
+            </Cell>
+            <Cell>
+              <Styled(Box)
+                autoid="Cell 3_cell"
+                display="flex"
+                gridColumn="span 1"
+                gridRow="span 1"
+              >
+                <Box
+                  autoid="Cell 3_cell"
+                  className="sc-jSFjdj GVHQI"
+                  display="flex"
+                  gridColumn="span 1"
+                  gridRow="span 1"
+                >
+                  <styled.div
+                    className="sc-jSFjdj GVHQI"
+                    data-autoid="cell_3_cell"
+                    display="flex"
+                    gridColumn="span 1"
+                    gridRow="span 1"
+                  >
+                    <div
+                      className="sc-bdnxRM frecOH sc-jSFjdj GVHQI"
+                      data-autoid="cell_3_cell"
+                      display="flex"
+                    >
+                      Cell 3
+                    </div>
+                  </styled.div>
+                </Box>
+              </Styled(Box)>
+            </Cell>
+            <Cell>
+              <Styled(Box)
+                autoid="Cell 4_cell"
+                display="flex"
+                gridColumn="span 1"
+                gridRow="span 1"
+              >
+                <Box
+                  autoid="Cell 4_cell"
+                  className="sc-jSFjdj GVHQI"
+                  display="flex"
+                  gridColumn="span 1"
+                  gridRow="span 1"
+                >
+                  <styled.div
+                    className="sc-jSFjdj GVHQI"
+                    data-autoid="cell_4_cell"
+                    display="flex"
+                    gridColumn="span 1"
+                    gridRow="span 1"
+                  >
+                    <div
+                      className="sc-bdnxRM frecOH sc-jSFjdj GVHQI"
+                      data-autoid="cell_4_cell"
+                      display="flex"
+                    >
+                      Cell 4
+                    </div>
+                  </styled.div>
+                </Box>
+              </Styled(Box)>
+            </Cell>
+            <Cell>
+              <Styled(Box)
+                autoid="Cell 5_cell"
+                display="flex"
+                gridColumn="span 1"
+                gridRow="span 1"
+              >
+                <Box
+                  autoid="Cell 5_cell"
+                  className="sc-jSFjdj GVHQI"
+                  display="flex"
+                  gridColumn="span 1"
+                  gridRow="span 1"
+                >
+                  <styled.div
+                    className="sc-jSFjdj GVHQI"
+                    data-autoid="cell_5_cell"
+                    display="flex"
+                    gridColumn="span 1"
+                    gridRow="span 1"
+                  >
+                    <div
+                      className="sc-bdnxRM frecOH sc-jSFjdj GVHQI"
+                      data-autoid="cell_5_cell"
+                      display="flex"
+                    >
+                      Cell 5
+                    </div>
+                  </styled.div>
+                </Box>
+              </Styled(Box)>
+            </Cell>
+          </div>
+        </styled.div>
+      </Box>
+    </Styled(Box)>
+  </Grid>
+</Component>
+`;
