@@ -5,6 +5,7 @@ exports[`<Button /> renders default correctly 1`] = `
   <Button>
     <Styled(Interactable)
       autoid="Default_button"
+      flexDirection="row"
       forwardedAs="button"
       typography="button"
       variant="default"
@@ -12,30 +13,248 @@ exports[`<Button /> renders default correctly 1`] = `
       <Interactable
         as="button"
         autoid="Default_button"
-        className="sc-hKFxyN iXFsit"
+        className="sc-eCApnc kUA-Dyt"
+        flexDirection="row"
         typography="button"
         variant="default"
       >
         <styled.div
           as="button"
-          className="sc-hKFxyN iXFsit"
+          className="sc-eCApnc kUA-Dyt"
           data-autoid="default_button"
+          flexDirection="row"
           onClick={[Function]}
           typography="button"
           variant="default"
         >
           <button
-            className="sc-dlnjwi bUluch sc-hKFxyN iXFsit"
+            className="sc-dlnjwi knsKTx sc-eCApnc kUA-Dyt"
             data-autoid="default_button"
             onClick={[Function]}
           >
             <Text>
               <styled.span>
                 <span
-                  className="sc-bdnxRM eZabTl"
+                  className="sc-hKFxyN faAyxo"
                 >
                   Default
                 </span>
+              </styled.span>
+            </Text>
+          </button>
+        </styled.div>
+      </Interactable>
+    </Styled(Interactable)>
+  </Button>
+</Component>
+`;
+
+exports[`<Button /> renders icon correctly 1`] = `
+<Component>
+  <Button
+    iconName="GitHub"
+  >
+    <Styled(Interactable)
+      autoid="Secondary_button"
+      flexDirection="row"
+      forwardedAs="button"
+      typography="button"
+      variant="default"
+    >
+      <Interactable
+        as="button"
+        autoid="Secondary_button"
+        className="sc-eCApnc kUA-Dyt"
+        flexDirection="row"
+        typography="button"
+        variant="default"
+      >
+        <styled.div
+          as="button"
+          className="sc-eCApnc kUA-Dyt"
+          data-autoid="secondary_button"
+          flexDirection="row"
+          onClick={[Function]}
+          typography="button"
+          variant="default"
+        >
+          <button
+            className="sc-dlnjwi knsKTx sc-eCApnc kUA-Dyt"
+            data-autoid="secondary_button"
+            onClick={[Function]}
+          >
+            <Icon
+              ml={-2}
+              mr={2}
+              name="GitHub"
+            >
+              <Suspense
+                fallback={<HelpCircle />}
+              >
+                <Styled(Box)
+                  autoid="github_icon"
+                  ml={-2}
+                  mr={2}
+                >
+                  <Box
+                    autoid="github_icon"
+                    className="sc-gtsrHT cDFXLc"
+                    ml={-2}
+                    mr={2}
+                  >
+                    <styled.div
+                      className="sc-gtsrHT cDFXLc"
+                      data-autoid="github_icon"
+                      ml={-2}
+                      mr={2}
+                    >
+                      <div
+                        className="sc-bdnxRM dCXypV sc-gtsrHT cDFXLc"
+                        data-autoid="github_icon"
+                      />
+                    </styled.div>
+                  </Box>
+                </Styled(Box)>
+                <HelpCircle>
+                  <svg
+                    fill="none"
+                    height={24}
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    width={24}
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                    />
+                    <path
+                      d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"
+                    />
+                    <line
+                      x1="12"
+                      x2="12.01"
+                      y1="17"
+                      y2="17"
+                    />
+                  </svg>
+                </HelpCircle>
+              </Suspense>
+            </Icon>
+            <Text>
+              <styled.span>
+                <span
+                  className="sc-hKFxyN faAyxo"
+                >
+                  Secondary
+                </span>
+              </styled.span>
+            </Text>
+          </button>
+        </styled.div>
+      </Interactable>
+    </Styled(Interactable)>
+  </Button>
+</Component>
+`;
+
+exports[`<Button /> renders icon only correctly 1`] = `
+<Component>
+  <Button
+    iconName="GitHub"
+  >
+    <Styled(Interactable)
+      autoid="_button"
+      flexDirection="row"
+      forwardedAs="button"
+      typography="button"
+      variant="default"
+    >
+      <Interactable
+        as="button"
+        autoid="_button"
+        className="sc-eCApnc kUA-Dyt"
+        flexDirection="row"
+        typography="button"
+        variant="default"
+      >
+        <styled.div
+          as="button"
+          className="sc-eCApnc kUA-Dyt"
+          data-autoid="_button"
+          flexDirection="row"
+          onClick={[Function]}
+          typography="button"
+          variant="default"
+        >
+          <button
+            className="sc-dlnjwi knsKTx sc-eCApnc kUA-Dyt"
+            data-autoid="_button"
+            onClick={[Function]}
+          >
+            <Icon
+              name="GitHub"
+            >
+              <Suspense
+                fallback={<HelpCircle />}
+              >
+                <Styled(Box)
+                  autoid="github_icon"
+                >
+                  <Box
+                    autoid="github_icon"
+                    className="sc-gtsrHT FFrLS"
+                  >
+                    <styled.div
+                      className="sc-gtsrHT FFrLS"
+                      data-autoid="github_icon"
+                    >
+                      <div
+                        className="sc-bdnxRM jWmaYf sc-gtsrHT FFrLS"
+                        data-autoid="github_icon"
+                      />
+                    </styled.div>
+                  </Box>
+                </Styled(Box)>
+                <HelpCircle>
+                  <svg
+                    fill="none"
+                    height={24}
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    width={24}
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                    />
+                    <path
+                      d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"
+                    />
+                    <line
+                      x1="12"
+                      x2="12.01"
+                      y1="17"
+                      y2="17"
+                    />
+                  </svg>
+                </HelpCircle>
+              </Suspense>
+            </Icon>
+            <Text>
+              <styled.span>
+                <span
+                  className="sc-hKFxyN faAyxo"
+                />
               </styled.span>
             </Text>
           </button>
@@ -53,6 +272,7 @@ exports[`<Button /> renders primary correctly 1`] = `
   >
     <Styled(Interactable)
       autoid="Primary_button"
+      flexDirection="row"
       forwardedAs="button"
       typography="button"
       variant="primary"
@@ -60,27 +280,29 @@ exports[`<Button /> renders primary correctly 1`] = `
       <Interactable
         as="button"
         autoid="Primary_button"
-        className="sc-hKFxyN bkQBjU"
+        className="sc-eCApnc cnwQbo"
+        flexDirection="row"
         typography="button"
         variant="primary"
       >
         <styled.div
           as="button"
-          className="sc-hKFxyN bkQBjU"
+          className="sc-eCApnc cnwQbo"
           data-autoid="primary_button"
+          flexDirection="row"
           onClick={[Function]}
           typography="button"
           variant="primary"
         >
           <button
-            className="sc-dlnjwi bUluch sc-hKFxyN bkQBjU"
+            className="sc-dlnjwi knsKTx sc-eCApnc cnwQbo"
             data-autoid="primary_button"
             onClick={[Function]}
           >
             <Text>
               <styled.span>
                 <span
-                  className="sc-bdnxRM eZabTl"
+                  className="sc-hKFxyN faAyxo"
                 >
                   Primary
                 </span>
@@ -101,6 +323,7 @@ exports[`<Button /> renders secondary correctly 1`] = `
   >
     <Styled(Interactable)
       autoid="Secondary_button"
+      flexDirection="row"
       forwardedAs="button"
       typography="button"
       variant="secondary"
@@ -108,27 +331,29 @@ exports[`<Button /> renders secondary correctly 1`] = `
       <Interactable
         as="button"
         autoid="Secondary_button"
-        className="sc-hKFxyN bUpehk"
+        className="sc-eCApnc iphIYE"
+        flexDirection="row"
         typography="button"
         variant="secondary"
       >
         <styled.div
           as="button"
-          className="sc-hKFxyN bUpehk"
+          className="sc-eCApnc iphIYE"
           data-autoid="secondary_button"
+          flexDirection="row"
           onClick={[Function]}
           typography="button"
           variant="secondary"
         >
           <button
-            className="sc-dlnjwi bUluch sc-hKFxyN bUpehk"
+            className="sc-dlnjwi knsKTx sc-eCApnc iphIYE"
             data-autoid="secondary_button"
             onClick={[Function]}
           >
             <Text>
               <styled.span>
                 <span
-                  className="sc-bdnxRM eZabTl"
+                  className="sc-hKFxyN faAyxo"
                 >
                   Secondary
                 </span>
