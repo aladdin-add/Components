@@ -19,7 +19,7 @@
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "yarn build:tokens && start-storybook -p 6006",
     "build-storybook": "build-storybook --docs"
   },
   "peerDependencies": {
