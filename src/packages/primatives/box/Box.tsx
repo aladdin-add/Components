@@ -20,7 +20,7 @@ export interface Props
     BorderProps,
     ShadowProps,
     FlexboxProps {
-  children: ReactNode;
+  children?: ReactNode;
   as?: any;
   autoid?: string;
   className?: string;

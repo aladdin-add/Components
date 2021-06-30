@@ -28,4 +28,9 @@ describe('<Button />', () => {
     );
     expect(toJson(wrapper)).toMatchSnapshot();
   });
+
+  it('renders icon only correctly', () => {
+    const wrapper = mountWithTheme(<Button iconName="GitHub" />);
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
 });

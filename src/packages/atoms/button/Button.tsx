@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { InteractableProps, Text, Icon } from '@/primatives';
 
-import { StyledInteractable, iconOrientations } from './styled';
+import { StyledInteractable, iconOrientations, iconMargins } from './styled';
 
 export interface Props extends InteractableProps {
   iconName?: string;
@@ -11,13 +11,20 @@ export interface Props extends InteractableProps {
 
 const Button = ({
   className,
-  children,
+  children = '',
   iconName,
   iconPosition = 'left',
   autoid,
   variant = 'default',
   ...rest
 }: Props) => {
+  const hasChildren = useMemo(() => {
+    if (typeof children === 'string' && children === '') {
+      return false;
+    }
+    return true;
+  }, [children]);
+
   return (
     <StyledInteractable
       className={className}
@@ -28,7 +35,14 @@ const Button = ({
       {...iconOrientations[iconPosition]}
       {...rest}
     >
-      {iconName && <Icon name={iconName} />}
+      {iconName && (
+        <Icon
+          name={iconName}
+          {...(hasChildren &&
+            iconPosition in iconMargins &&
+            iconMargins[iconPosition])}
+        />
+      )}
       {typeof children === 'string' ? <Text>{children}</Text> : { children }}
     </StyledInteractable>
   );

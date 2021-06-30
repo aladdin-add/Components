@@ -29,3 +29,5 @@ export const IconButtons = () => (
     </Button>
   </>
 );
+
+export const IconOnly = () => <Button iconName="GitHub" />;
