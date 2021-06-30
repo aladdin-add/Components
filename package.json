@@ -19,7 +19,7 @@
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "storybook": "start-storybook -c .storybook-local -p 6006",
+    "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook --docs"
   },
   "peerDependencies": {
