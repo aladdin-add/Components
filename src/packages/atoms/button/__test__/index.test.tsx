@@ -21,4 +21,11 @@ describe('<Button />', () => {
     );
     expect(toJson(wrapper)).toMatchSnapshot();
   });
+
+  it('renders icon correctly', () => {
+    const wrapper = mountWithTheme(
+      <Button iconName="GitHub">Secondary</Button>
+    );
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
 });

@@ -1,11 +1,11 @@
 import React from 'react';
-import { InteractableProps, Text, Icon } from "@/primatives";
+import { InteractableProps, Text, Icon } from '@/primatives';
 
 import { StyledInteractable, iconOrientations } from './styled';
 
 export interface Props extends InteractableProps {
   iconName?: string;
-  iconPosition?: "left" | "top" | "right" | "bottom";
+  iconPosition?: 'left' | 'top' | 'right' | 'bottom';
   variant?: string;
 }
 
@@ -13,7 +13,7 @@ const Button = ({
   className,
   children,
   iconName,
-  iconPosition = "left",
+  iconPosition = 'left',
   autoid,
   variant = 'default',
   ...rest

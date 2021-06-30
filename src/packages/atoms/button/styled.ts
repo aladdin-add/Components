@@ -4,20 +4,20 @@ import Interactable from '@/primatives/interactable';
 
 export const iconOrientations = {
   top: {
-    flexDirection: "column-reverse",
-    justifyContent: "center",
-    alignItems: "center",
+    flexDirection: 'column-reverse',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   bottom: {
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   left: {
-    flexDirection: "row-reverse",
+    flexDirection: 'row-reverse',
   },
   right: {
-    flexDirection: "row",
+    flexDirection: 'row',
   },
 };
 
