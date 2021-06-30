@@ -1,8 +1,7 @@
 import React, { useContext, Suspense, useMemo } from 'react';
-import { HelpCircle } from 'react-feather';
-import { generateAutomationId } from '@/utils/automation';
-import { BoxProps } from '@/primatives/box';
-import { ConfigContext } from '@/utils/context/config';
+import { HelpCircle, Minus } from 'react-feather';
+import { generateAutomationId, ConfigContext } from '@/utils';
+import { BoxProps } from '@/primatives';
 
 import { getIcon } from './utils';
 import { SvgWrapper } from './styled';
@@ -14,7 +13,7 @@ export interface Props extends Omit<BoxProps, 'children'> {
 const Icon = ({ autoid, name, ...rest }: Props) => {
   const config = useContext(ConfigContext);
 
-  const Element = useMemo(() => getIcon(config, name), [config, name]);
+  const Element = Minus;
 
   return (
     <Suspense fallback={<HelpCircle />}>

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { StyledBoxProps } from '@/primatives/box';
+import { Box, StyledBoxProps } from '@/primatives';
 
-export const StyledInteractable = styled.div`
+export const StyledInteractable = styled(Box)`
   ${StyledBoxProps}
 `;

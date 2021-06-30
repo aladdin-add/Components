@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react';
+import { Property } from 'csstype';
 import {
   SpaceProps,
   ColorProps,
@@ -24,6 +25,8 @@ export interface Props
   as?: any;
   autoid?: string;
   className?: string;
+  cursor?: Property.Cursor;
+  pointerEvents?: Property.PointerEvents;
 }
 
 const Box = ({ children, as, autoid, ...rest }: Props) => (
