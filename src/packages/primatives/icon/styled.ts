@@ -4,7 +4,11 @@ import { Box, StyledBoxProps } from '@/primatives';
 import { shouldForwardProp } from '@/utils';
 
 export const SvgWrapper = styled(Box).withConfig({
-  shouldForwardProp: shouldForwardProp([...StyledBoxProps.propNames, "noFill", "cursor"]) as () => boolean
+  shouldForwardProp: shouldForwardProp([
+    ...StyledBoxProps.propNames,
+    'noFill',
+    'cursor',
+  ]) as () => boolean,
 })<{ noFill?: boolean }>`
   pointer-events: none;
 

@@ -42,7 +42,7 @@ export const StyledBoxProps = compose(
 );
 
 export const StyledBox = styled.div.withConfig({
-  shouldForwardProp: shouldForwardProp(StyledBoxProps.propNames) as any
+  shouldForwardProp: shouldForwardProp(StyledBoxProps.propNames) as any,
 })`
   display: block;
   box-sizing: border-box;
