@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import Checkbox from './';
 
@@ -8,14 +8,7 @@ export default {
 };
 
 export const story = () => {
-  const [checked, setChecked] = useState(false);
-
-  return (
-    <Checkbox
-      checked={checked}
-      onClick={() => setChecked((prevState) => !prevState)}
-    />
-  );
+  return <Checkbox checked />;
 };
 
 export const Indeterminate = () => {

@@ -1,9 +1,4 @@
 import styled from 'styled-components';
-import { Box, StyledBoxProps } from '@/primatives';
-import { shouldForwardProp } from '@/utils';
+import { Box } from '@/primatives';
 
-export const StyledInteractable = styled(Box).withConfig({
-  shouldForwardProp: shouldForwardProp(
-    StyledBoxProps.propNames
-  ) as () => boolean,
-})``;
+export const StyledInteractable = styled(Box)``;
