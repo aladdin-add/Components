@@ -12,6 +12,7 @@ import {
   get,
 } from '@aw-web-design/styled-system';
 import { getContrast } from '@aw-web-design/theme';
+import { shouldForwardProp } from '@/utils';
 
 const utilProps = system({
   visibility: {
@@ -40,7 +41,9 @@ export const StyledBoxProps = compose(
   utilProps
 );
 
-export const StyledBox = styled.div`
+export const StyledBox = styled.div.withConfig({
+  shouldForwardProp: shouldForwardProp(StyledBoxProps.propNames) as any
+})`
   display: block;
   box-sizing: border-box;
   ${StyledBoxProps}

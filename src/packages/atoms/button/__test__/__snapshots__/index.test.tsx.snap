@@ -18,7 +18,7 @@ exports[`<Button /> renders default correctly 1`] = `
         typography="button"
         variant="default"
       >
-        <styled.div
+        <Styled(Box)
           as="button"
           className="sc-eCApnc kUA-Dyt"
           data-autoid="default_button"
@@ -28,7 +28,7 @@ exports[`<Button /> renders default correctly 1`] = `
           variant="default"
         >
           <button
-            className="sc-dlnjwi knsKTx sc-eCApnc kUA-Dyt"
+            className="sc-dlnjwi sc-eCApnc kUA-Dyt"
             data-autoid="default_button"
             onClick={[Function]}
           >
@@ -42,7 +42,7 @@ exports[`<Button /> renders default correctly 1`] = `
               </styled.span>
             </Text>
           </button>
-        </styled.div>
+        </Styled(Box)>
       </Interactable>
     </Styled(Interactable)>
   </Button>
@@ -69,7 +69,7 @@ exports[`<Button /> renders icon correctly 1`] = `
         typography="button"
         variant="default"
       >
-        <styled.div
+        <Styled(Box)
           as="button"
           className="sc-eCApnc kUA-Dyt"
           data-autoid="secondary_button"
@@ -79,11 +79,11 @@ exports[`<Button /> renders icon correctly 1`] = `
           variant="default"
         >
           <button
-            className="sc-dlnjwi knsKTx sc-eCApnc kUA-Dyt"
+            className="sc-dlnjwi sc-eCApnc kUA-Dyt"
             data-autoid="secondary_button"
             onClick={[Function]}
           >
-            <Icon
+            <Memo(Icon)
               ml={-2}
               mr={2}
               name="GitHub"
@@ -98,18 +98,14 @@ exports[`<Button /> renders icon correctly 1`] = `
                 >
                   <Box
                     autoid="github_icon"
-                    className="sc-gtsrHT cDFXLc"
-                    ml={-2}
-                    mr={2}
+                    className="sc-gtsrHT dHTLeg"
                   >
                     <styled.div
-                      className="sc-gtsrHT cDFXLc"
+                      className="sc-gtsrHT dHTLeg"
                       data-autoid="github_icon"
-                      ml={-2}
-                      mr={2}
                     >
                       <div
-                        className="sc-bdnxRM dCXypV sc-gtsrHT cDFXLc"
+                        className="sc-bdnxRM jWmaYf sc-gtsrHT dHTLeg"
                         data-autoid="github_icon"
                       />
                     </styled.div>
@@ -144,7 +140,7 @@ exports[`<Button /> renders icon correctly 1`] = `
                   </svg>
                 </HelpCircle>
               </Suspense>
-            </Icon>
+            </Memo(Icon)>
             <Text>
               <styled.span>
                 <span
@@ -155,7 +151,7 @@ exports[`<Button /> renders icon correctly 1`] = `
               </styled.span>
             </Text>
           </button>
-        </styled.div>
+        </Styled(Box)>
       </Interactable>
     </Styled(Interactable)>
   </Button>
@@ -182,7 +178,7 @@ exports[`<Button /> renders icon only correctly 1`] = `
         typography="button"
         variant="default"
       >
-        <styled.div
+        <Styled(Box)
           as="button"
           className="sc-eCApnc kUA-Dyt"
           data-autoid="_button"
@@ -192,11 +188,11 @@ exports[`<Button /> renders icon only correctly 1`] = `
           variant="default"
         >
           <button
-            className="sc-dlnjwi knsKTx sc-eCApnc kUA-Dyt"
+            className="sc-dlnjwi sc-eCApnc kUA-Dyt"
             data-autoid="_button"
             onClick={[Function]}
           >
-            <Icon
+            <Memo(Icon)
               name="GitHub"
             >
               <Suspense
@@ -207,14 +203,14 @@ exports[`<Button /> renders icon only correctly 1`] = `
                 >
                   <Box
                     autoid="github_icon"
-                    className="sc-gtsrHT FFrLS"
+                    className="sc-gtsrHT eAuQgo"
                   >
                     <styled.div
-                      className="sc-gtsrHT FFrLS"
+                      className="sc-gtsrHT eAuQgo"
                       data-autoid="github_icon"
                     >
                       <div
-                        className="sc-bdnxRM jWmaYf sc-gtsrHT FFrLS"
+                        className="sc-bdnxRM jWmaYf sc-gtsrHT eAuQgo"
                         data-autoid="github_icon"
                       />
                     </styled.div>
@@ -249,7 +245,7 @@ exports[`<Button /> renders icon only correctly 1`] = `
                   </svg>
                 </HelpCircle>
               </Suspense>
-            </Icon>
+            </Memo(Icon)>
             <Text>
               <styled.span>
                 <span
@@ -258,7 +254,7 @@ exports[`<Button /> renders icon only correctly 1`] = `
               </styled.span>
             </Text>
           </button>
-        </styled.div>
+        </Styled(Box)>
       </Interactable>
     </Styled(Interactable)>
   </Button>
@@ -285,7 +281,7 @@ exports[`<Button /> renders primary correctly 1`] = `
         typography="button"
         variant="primary"
       >
-        <styled.div
+        <Styled(Box)
           as="button"
           className="sc-eCApnc cnwQbo"
           data-autoid="primary_button"
@@ -295,7 +291,7 @@ exports[`<Button /> renders primary correctly 1`] = `
           variant="primary"
         >
           <button
-            className="sc-dlnjwi knsKTx sc-eCApnc cnwQbo"
+            className="sc-dlnjwi sc-eCApnc cnwQbo"
             data-autoid="primary_button"
             onClick={[Function]}
           >
@@ -309,7 +305,7 @@ exports[`<Button /> renders primary correctly 1`] = `
               </styled.span>
             </Text>
           </button>
-        </styled.div>
+        </Styled(Box)>
       </Interactable>
     </Styled(Interactable)>
   </Button>
@@ -336,7 +332,7 @@ exports[`<Button /> renders secondary correctly 1`] = `
         typography="button"
         variant="secondary"
       >
-        <styled.div
+        <Styled(Box)
           as="button"
           className="sc-eCApnc iphIYE"
           data-autoid="secondary_button"
@@ -346,7 +342,7 @@ exports[`<Button /> renders secondary correctly 1`] = `
           variant="secondary"
         >
           <button
-            className="sc-dlnjwi knsKTx sc-eCApnc iphIYE"
+            className="sc-dlnjwi sc-eCApnc iphIYE"
             data-autoid="secondary_button"
             onClick={[Function]}
           >
@@ -360,7 +356,7 @@ exports[`<Button /> renders secondary correctly 1`] = `
               </styled.span>
             </Text>
           </button>
-        </styled.div>
+        </Styled(Box)>
       </Interactable>
     </Styled(Interactable)>
   </Button>

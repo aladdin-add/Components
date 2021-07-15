@@ -2,7 +2,7 @@
 
 exports[`<Icon /> renders correctly 1`] = `
 <Component>
-  <Icon
+  <Memo(Icon)
     name="test"
   >
     <Suspense
@@ -13,14 +13,14 @@ exports[`<Icon /> renders correctly 1`] = `
       >
         <Box
           autoid="test_icon"
-          className="sc-gtsrHT FFrLS"
+          className="sc-hKFxyN dmuDqs"
         >
           <styled.div
-            className="sc-gtsrHT FFrLS"
+            className="sc-hKFxyN dmuDqs"
             data-autoid="test_icon"
           >
             <div
-              className="sc-bdnxRM jWmaYf sc-gtsrHT FFrLS"
+              className="sc-bdnxRM jWmaYf sc-hKFxyN dmuDqs"
               data-autoid="test_icon"
             >
               <GitHub>
@@ -45,6 +45,6 @@ exports[`<Icon /> renders correctly 1`] = `
         </Box>
       </Styled(Box)>
     </Suspense>
-  </Icon>
+  </Memo(Icon)>
 </Component>
 `;

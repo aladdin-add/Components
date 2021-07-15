@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import Checkbox from "./";
+import Checkbox from './';
 
 export default {
   title: 'Components / Atoms / Checkbox',
@@ -8,9 +8,16 @@ export default {
 };
 
 export const story = () => {
-    const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState(false);
 
-    return (
-        <Checkbox checked={checked} onClick={() => setChecked(prevState => !prevState)} />
-    )
-}
+  return (
+    <Checkbox
+      checked={checked}
+      onClick={() => setChecked((prevState) => !prevState)}
+    />
+  );
+};
+
+export const Indeterminate = () => {
+  return <Checkbox indeterminate />;
+};
