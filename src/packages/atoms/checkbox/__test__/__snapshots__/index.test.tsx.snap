@@ -36,21 +36,39 @@ exports[`<Checkbox /> renders correctly checked 1`] = `
         size={7}
       >
         <Box
+          alignItems="center"
+          bgColor="neutrals.0"
+          border="1"
+          borderColor="neutrals.10"
+          borderRadius="1"
           className="sc-dlnjwi"
           cursor="pointer"
           data-autoid="checkbox"
           data-checked={true}
+          display="flex"
+          justifyContent="center"
           onClick={[Function]}
+          opacity="3"
+          size={7}
         >
           <styled.div
+            alignItems="center"
+            bgColor="neutrals.0"
+            border="1"
+            borderColor="neutrals.10"
+            borderRadius="1"
             className="sc-dlnjwi"
             cursor="pointer"
             data-autoid="checkbox"
             data-checked={true}
+            display="flex"
+            justifyContent="center"
             onClick={[Function]}
+            opacity="3"
+            size={7}
           >
             <div
-              className="sc-bdnxRM jWmaYf sc-dlnjwi"
+              className="sc-bdnxRM XzNGZ sc-dlnjwi"
               cursor="pointer"
               data-autoid="checkbox"
               data-checked={true}
@@ -158,21 +176,37 @@ exports[`<Checkbox /> renders correctly indeterminate 1`] = `
         size={7}
       >
         <Box
+          alignItems="center"
+          bgColor="neutrals.0"
+          border="1"
+          borderColor="neutrals.10"
+          borderRadius="1"
           className="sc-dlnjwi"
           cursor="pointer"
           data-autoid="checkbox"
           data-indeterminate={true}
+          display="flex"
+          justifyContent="center"
           onClick={[Function]}
+          size={7}
         >
           <styled.div
+            alignItems="center"
+            bgColor="neutrals.0"
+            border="1"
+            borderColor="neutrals.10"
+            borderRadius="1"
             className="sc-dlnjwi"
             cursor="pointer"
             data-autoid="checkbox"
             data-indeterminate={true}
+            display="flex"
+            justifyContent="center"
             onClick={[Function]}
+            size={7}
           >
             <div
-              className="sc-bdnxRM jWmaYf sc-dlnjwi"
+              className="sc-bdnxRM aFGOi sc-dlnjwi"
               cursor="pointer"
               data-autoid="checkbox"
               data-indeterminate={true}
@@ -276,19 +310,35 @@ exports[`<Checkbox /> renders correctly no icon 1`] = `
         size={7}
       >
         <Box
+          alignItems="center"
+          bgColor="neutrals.0"
+          border="1"
+          borderColor="neutrals.10"
+          borderRadius="1"
           className="sc-dlnjwi"
           cursor="pointer"
           data-autoid="checkbox"
+          display="flex"
+          justifyContent="center"
           onClick={[Function]}
+          size={7}
         >
           <styled.div
+            alignItems="center"
+            bgColor="neutrals.0"
+            border="1"
+            borderColor="neutrals.10"
+            borderRadius="1"
             className="sc-dlnjwi"
             cursor="pointer"
             data-autoid="checkbox"
+            display="flex"
+            justifyContent="center"
             onClick={[Function]}
+            size={7}
           >
             <div
-              className="sc-bdnxRM jWmaYf sc-dlnjwi"
+              className="sc-bdnxRM aFGOi sc-dlnjwi"
               cursor="pointer"
               data-autoid="checkbox"
               onClick={[Function]}
