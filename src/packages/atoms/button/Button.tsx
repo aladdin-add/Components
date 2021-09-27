@@ -32,8 +32,8 @@ const Button = ({
       autoid={`${autoid || children}_button`}
       typography="button"
       variant={variant}
-      {...iconOrientations[iconPosition]}
       {...rest}
+      {...iconOrientations[iconPosition]}
     >
       {iconName && (
         <Icon
