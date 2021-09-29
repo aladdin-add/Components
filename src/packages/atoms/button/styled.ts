@@ -2,6 +2,42 @@ import styled, { css } from 'styled-components';
 import { variant, Theme } from '@aw-web-design/styled-system';
 import Interactable from '@/primatives/interactable';
 
+export const iconMargins = {
+  left: {
+    mr: 2,
+    ml: -2,
+  },
+  right: {
+    ml: 2,
+    mr: -2,
+  },
+  top: {
+    mb: 2,
+  },
+  bottom: {
+    mt: 2,
+  },
+};
+
+export const iconOrientations = {
+  top: {
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  bottom: {
+    flexDirection: 'column-reverse',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  left: {
+    flexDirection: 'row',
+  },
+  right: {
+    flexDirection: 'row-reverse',
+  },
+};
+
 export const ButtonVariants = (theme: Theme) => {
   if (typeof theme.variants?.buttons === 'function') {
     return variant({

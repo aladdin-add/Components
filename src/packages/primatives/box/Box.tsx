@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react';
+import { Property } from 'csstype';
 import {
   SpaceProps,
   ColorProps,
@@ -20,10 +21,12 @@ export interface Props
     BorderProps,
     ShadowProps,
     FlexboxProps {
-  children: ReactNode;
+  children?: ReactNode;
   as?: any;
   autoid?: string;
   className?: string;
+  cursor?: Property.Cursor;
+  pointerEvents?: Property.PointerEvents;
 }
 
 const Box = ({ children, as, autoid, ...rest }: Props) => (

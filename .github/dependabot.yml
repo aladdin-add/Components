@@ -1,50 +1,14 @@
-version: 2
-registries:
-  npm-registry-npm-pkg-github-com-aw-web-design:
-    type: npm-registry
-    url: https://npm.pkg.github.com/aw-web-design
-    token: "${{secrets.NPM_REGISTRY_NPM_PKG_GITHUB_COM_AW_WEB_DESIGN_TOKEN}}"
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
+version: 2
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 99
-  target-branch: dev
-  versioning-strategy: increase
-  ignore:
-  - dependency-name: "@typescript-eslint/eslint-plugin"
-    versions:
-    - ">= 4.a, < 5"
-  - dependency-name: eslint-config-prettier
-    versions:
-    - 8.1.0
-    - 8.2.0
-  - dependency-name: fork-ts-checker-webpack-plugin
-    versions:
-    - 6.2.2
-    - 6.2.3
-  - dependency-name: css-loader
-    versions:
-    - 5.2.3
-  - dependency-name: webpack
-    versions:
-    - 5.34.0
-  - dependency-name: ts-loader
-    versions:
-    - 9.0.0
-  - dependency-name: "@storybook/addon-essentials"
-    versions:
-    - 6.2.6
-  - dependency-name: "@storybook/react"
-    versions:
-    - 6.2.6
-  - dependency-name: copy-webpack-plugin
-    versions:
-    - 8.0.0
-  - dependency-name: "@aw-web-design/theme"
-    versions:
-    - 0.0.27
-  registries:
-  - npm-registry-npm-pkg-github-com-aw-web-design
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    target-branch: "dev"
+    reviewers:
+      - "the-code-monkey"
+    schedule:
+      interval: "daily"

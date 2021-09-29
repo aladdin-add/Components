@@ -1,11 +1,11 @@
 import React from 'react';
-import { BoxProps } from '@/primatives/box';
-import { generateAutomationId } from '@/utils/automation';
+import { BoxProps } from '@/primatives';
+import { generateAutomationId } from '@/utils';
 
 import { StyledInteractable } from './styled';
 
 export interface Props extends BoxProps {
-  onClick?: () => void;
+  onClick?: (event: MouseEvent) => void;
 }
 
 const Interactable = ({
@@ -15,9 +15,9 @@ const Interactable = ({
   onClick,
   ...rest
 }: Props) => {
-  const handleOnClick = () => {
+  const handleOnClick = (event: MouseEvent) => {
     if (onClick) {
-      onClick();
+      onClick(event);
     }
   };
 
