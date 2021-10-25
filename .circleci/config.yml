@@ -55,7 +55,7 @@ jobs:
   test:
     executor:
       name: node/default
-      tag: '12.16'
+      tag: '16.12'
     steps:
       - checkout
       - run: yarn
@@ -69,7 +69,7 @@ jobs:
   build:
     executor:
       name: node/default
-      tag: '12.16'
+      tag: '16.12'
     steps:
       - attach_workspace:
           at: .
@@ -83,7 +83,7 @@ jobs:
   deploy:
     executor:
       name: node/default
-      tag: '12.16'
+      tag: '16.12'
     steps:
       - attach_workspace:
           at: .
