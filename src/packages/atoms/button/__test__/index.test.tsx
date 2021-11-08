@@ -17,14 +17,14 @@ describe('<Button />', () => {
 
   it('renders secondary correctly', () => {
     const wrapper = mountWithTheme(
-      <Button variant="secondary">Secondary</Button>,
+      <Button variant="secondary">Secondary</Button>
     );
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
   it('renders icon correctly', () => {
     const wrapper = mountWithTheme(
-      <Button iconName="GitHub">Secondary</Button>,
+      <Button iconName="GitHub">Secondary</Button>
     );
     expect(toJson(wrapper)).toMatchSnapshot();
   });

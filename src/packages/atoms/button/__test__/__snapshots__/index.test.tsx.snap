@@ -13,14 +13,14 @@ exports[`<Button /> renders default correctly 1`] = `
       <Interactable
         as="button"
         autoid="Default_button"
-        className="sc-eCApnc kUA-Dyt"
+        className="sc-eCImPb lnjTgc"
         flexDirection="row"
         typography="button"
         variant="default"
       >
         <Styled(Box)
           as="button"
-          className="sc-eCApnc kUA-Dyt"
+          className="sc-eCImPb lnjTgc"
           data-autoid="default_button"
           flexDirection="row"
           onClick={[Function]}
@@ -28,14 +28,14 @@ exports[`<Button /> renders default correctly 1`] = `
           variant="default"
         >
           <button
-            className="sc-dlnjwi sc-eCApnc kUA-Dyt"
+            className="sc-dkPtRN sc-eCImPb lnjTgc"
             data-autoid="default_button"
             onClick={[Function]}
           >
             <Text>
               <styled.span>
                 <span
-                  className="sc-hKFxyN faAyxo"
+                  className="sc-hKwDye jMPmrR"
                 >
                   Default
                 </span>
@@ -64,14 +64,14 @@ exports[`<Button /> renders icon correctly 1`] = `
       <Interactable
         as="button"
         autoid="Secondary_button"
-        className="sc-eCApnc kUA-Dyt"
+        className="sc-eCImPb lnjTgc"
         flexDirection="row"
         typography="button"
         variant="default"
       >
         <Styled(Box)
           as="button"
-          className="sc-eCApnc kUA-Dyt"
+          className="sc-eCImPb lnjTgc"
           data-autoid="secondary_button"
           flexDirection="row"
           onClick={[Function]}
@@ -79,7 +79,7 @@ exports[`<Button /> renders icon correctly 1`] = `
           variant="default"
         >
           <button
-            className="sc-dlnjwi sc-eCApnc kUA-Dyt"
+            className="sc-dkPtRN sc-eCImPb lnjTgc"
             data-autoid="secondary_button"
             onClick={[Function]}
           >
@@ -98,14 +98,14 @@ exports[`<Button /> renders icon correctly 1`] = `
                 >
                   <Box
                     autoid="github_icon"
-                    className="sc-gtsrHT dHTLeg"
+                    className="sc-gsDKAQ eMtlyW"
                   >
                     <styled.div
-                      className="sc-gtsrHT dHTLeg"
+                      className="sc-gsDKAQ eMtlyW"
                       data-autoid="github_icon"
                     >
                       <div
-                        className="sc-bdnxRM jWmaYf sc-gtsrHT dHTLeg"
+                        className="sc-bdvvtL jqaqtJ sc-gsDKAQ eMtlyW"
                         data-autoid="github_icon"
                       />
                     </styled.div>
@@ -144,7 +144,7 @@ exports[`<Button /> renders icon correctly 1`] = `
             <Text>
               <styled.span>
                 <span
-                  className="sc-hKFxyN faAyxo"
+                  className="sc-hKwDye jMPmrR"
                 >
                   Secondary
                 </span>
@@ -173,14 +173,14 @@ exports[`<Button /> renders icon only correctly 1`] = `
       <Interactable
         as="button"
         autoid="_button"
-        className="sc-eCApnc kUA-Dyt"
+        className="sc-eCImPb lnjTgc"
         flexDirection="row"
         typography="button"
         variant="default"
       >
         <Styled(Box)
           as="button"
-          className="sc-eCApnc kUA-Dyt"
+          className="sc-eCImPb lnjTgc"
           data-autoid="_button"
           flexDirection="row"
           onClick={[Function]}
@@ -188,7 +188,7 @@ exports[`<Button /> renders icon only correctly 1`] = `
           variant="default"
         >
           <button
-            className="sc-dlnjwi sc-eCApnc kUA-Dyt"
+            className="sc-dkPtRN sc-eCImPb lnjTgc"
             data-autoid="_button"
             onClick={[Function]}
           >
@@ -203,14 +203,14 @@ exports[`<Button /> renders icon only correctly 1`] = `
                 >
                   <Box
                     autoid="github_icon"
-                    className="sc-gtsrHT eAuQgo"
+                    className="sc-gsDKAQ ftyhIO"
                   >
                     <styled.div
-                      className="sc-gtsrHT eAuQgo"
+                      className="sc-gsDKAQ ftyhIO"
                       data-autoid="github_icon"
                     >
                       <div
-                        className="sc-bdnxRM jWmaYf sc-gtsrHT eAuQgo"
+                        className="sc-bdvvtL jqaqtJ sc-gsDKAQ ftyhIO"
                         data-autoid="github_icon"
                       />
                     </styled.div>
@@ -249,7 +249,7 @@ exports[`<Button /> renders icon only correctly 1`] = `
             <Text>
               <styled.span>
                 <span
-                  className="sc-hKFxyN faAyxo"
+                  className="sc-hKwDye jMPmrR"
                 />
               </styled.span>
             </Text>
@@ -276,14 +276,14 @@ exports[`<Button /> renders primary correctly 1`] = `
       <Interactable
         as="button"
         autoid="Primary_button"
-        className="sc-eCApnc cnwQbo"
+        className="sc-eCImPb fRQdxV"
         flexDirection="row"
         typography="button"
         variant="primary"
       >
         <Styled(Box)
           as="button"
-          className="sc-eCApnc cnwQbo"
+          className="sc-eCImPb fRQdxV"
           data-autoid="primary_button"
           flexDirection="row"
           onClick={[Function]}
@@ -291,14 +291,14 @@ exports[`<Button /> renders primary correctly 1`] = `
           variant="primary"
         >
           <button
-            className="sc-dlnjwi sc-eCApnc cnwQbo"
+            className="sc-dkPtRN sc-eCImPb fRQdxV"
             data-autoid="primary_button"
             onClick={[Function]}
           >
             <Text>
               <styled.span>
                 <span
-                  className="sc-hKFxyN faAyxo"
+                  className="sc-hKwDye jMPmrR"
                 >
                   Primary
                 </span>
@@ -327,14 +327,14 @@ exports[`<Button /> renders secondary correctly 1`] = `
       <Interactable
         as="button"
         autoid="Secondary_button"
-        className="sc-eCApnc iphIYE"
+        className="sc-eCImPb eKrult"
         flexDirection="row"
         typography="button"
         variant="secondary"
       >
         <Styled(Box)
           as="button"
-          className="sc-eCApnc iphIYE"
+          className="sc-eCImPb eKrult"
           data-autoid="secondary_button"
           flexDirection="row"
           onClick={[Function]}
@@ -342,14 +342,14 @@ exports[`<Button /> renders secondary correctly 1`] = `
           variant="secondary"
         >
           <button
-            className="sc-dlnjwi sc-eCApnc iphIYE"
+            className="sc-dkPtRN sc-eCImPb eKrult"
             data-autoid="secondary_button"
             onClick={[Function]}
           >
             <Text>
               <styled.span>
                 <span
-                  className="sc-hKFxyN faAyxo"
+                  className="sc-hKwDye jMPmrR"
                 >
                   Secondary
                 </span>

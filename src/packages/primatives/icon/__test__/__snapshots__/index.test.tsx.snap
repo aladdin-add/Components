@@ -13,14 +13,14 @@ exports[`<Icon /> renders correctly 1`] = `
       >
         <Box
           autoid="test_icon"
-          className="sc-gtsrHT eAuQgo"
+          className="sc-gsDKAQ ftyhIO"
         >
           <styled.div
-            className="sc-gtsrHT eAuQgo"
+            className="sc-gsDKAQ ftyhIO"
             data-autoid="test_icon"
           >
             <div
-              className="sc-bdnxRM jWmaYf sc-gtsrHT eAuQgo"
+              className="sc-bdvvtL jqaqtJ sc-gsDKAQ ftyhIO"
               data-autoid="test_icon"
             >
               <GitHub>

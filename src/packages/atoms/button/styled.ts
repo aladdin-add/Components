@@ -74,9 +74,9 @@ export const StyledInteractable = styled(Interactable)`
   }
   ${(p) => css`
     ${variant({
-    prop: 'typography',
-    scale: 'typography.type',
-  })}
+      prop: 'typography',
+      scale: 'typography.type',
+    })}
     ${ButtonVariants(p.theme)}
   `}
 `;

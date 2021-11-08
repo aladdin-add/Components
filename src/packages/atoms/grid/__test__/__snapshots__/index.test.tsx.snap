@@ -24,7 +24,7 @@ exports[`<Grid /> renders correctly 1`] = `
     >
       <Box
         autoid="undefined_table"
-        className="sc-eCApnc iRzZlc"
+        className="sc-eCImPb kfPsux"
         display="grid"
         gridTemplateColumns={
           Array [
@@ -35,7 +35,7 @@ exports[`<Grid /> renders correctly 1`] = `
         }
       >
         <styled.div
-          className="sc-eCApnc iRzZlc"
+          className="sc-eCImPb kfPsux"
           data-autoid="undefined_table"
           display="grid"
           gridTemplateColumns={
@@ -47,7 +47,7 @@ exports[`<Grid /> renders correctly 1`] = `
           }
         >
           <div
-            className="sc-bdnxRM igMDoM sc-eCApnc iRzZlc"
+            className="sc-bdvvtL gYhcny sc-eCImPb kfPsux"
             data-autoid="undefined_table"
           >
             <Cell>
@@ -59,20 +59,20 @@ exports[`<Grid /> renders correctly 1`] = `
               >
                 <Box
                   autoid="Cell 1_cell"
-                  className="sc-jSFjdj GVHQI"
+                  className="sc-jRQBWg cblwIr"
                   display="flex"
                   gridColumn="span 1"
                   gridRow="span 1"
                 >
                   <styled.div
-                    className="sc-jSFjdj GVHQI"
+                    className="sc-jRQBWg cblwIr"
                     data-autoid="cell_1_cell"
                     display="flex"
                     gridColumn="span 1"
                     gridRow="span 1"
                   >
                     <div
-                      className="sc-bdnxRM frecOH sc-jSFjdj GVHQI"
+                      className="sc-bdvvtL ALGtx sc-jRQBWg cblwIr"
                       data-autoid="cell_1_cell"
                     >
                       Cell 1
@@ -90,20 +90,20 @@ exports[`<Grid /> renders correctly 1`] = `
               >
                 <Box
                   autoid="Cell 2_cell"
-                  className="sc-jSFjdj GVHQI"
+                  className="sc-jRQBWg cblwIr"
                   display="flex"
                   gridColumn="span 1"
                   gridRow="span 1"
                 >
                   <styled.div
-                    className="sc-jSFjdj GVHQI"
+                    className="sc-jRQBWg cblwIr"
                     data-autoid="cell_2_cell"
                     display="flex"
                     gridColumn="span 1"
                     gridRow="span 1"
                   >
                     <div
-                      className="sc-bdnxRM frecOH sc-jSFjdj GVHQI"
+                      className="sc-bdvvtL ALGtx sc-jRQBWg cblwIr"
                       data-autoid="cell_2_cell"
                     >
                       Cell 2
@@ -121,20 +121,20 @@ exports[`<Grid /> renders correctly 1`] = `
               >
                 <Box
                   autoid="Cell 3_cell"
-                  className="sc-jSFjdj GVHQI"
+                  className="sc-jRQBWg cblwIr"
                   display="flex"
                   gridColumn="span 1"
                   gridRow="span 1"
                 >
                   <styled.div
-                    className="sc-jSFjdj GVHQI"
+                    className="sc-jRQBWg cblwIr"
                     data-autoid="cell_3_cell"
                     display="flex"
                     gridColumn="span 1"
                     gridRow="span 1"
                   >
                     <div
-                      className="sc-bdnxRM frecOH sc-jSFjdj GVHQI"
+                      className="sc-bdvvtL ALGtx sc-jRQBWg cblwIr"
                       data-autoid="cell_3_cell"
                     >
                       Cell 3
@@ -152,20 +152,20 @@ exports[`<Grid /> renders correctly 1`] = `
               >
                 <Box
                   autoid="Cell 4_cell"
-                  className="sc-jSFjdj GVHQI"
+                  className="sc-jRQBWg cblwIr"
                   display="flex"
                   gridColumn="span 1"
                   gridRow="span 1"
                 >
                   <styled.div
-                    className="sc-jSFjdj GVHQI"
+                    className="sc-jRQBWg cblwIr"
                     data-autoid="cell_4_cell"
                     display="flex"
                     gridColumn="span 1"
                     gridRow="span 1"
                   >
                     <div
-                      className="sc-bdnxRM frecOH sc-jSFjdj GVHQI"
+                      className="sc-bdvvtL ALGtx sc-jRQBWg cblwIr"
                       data-autoid="cell_4_cell"
                     >
                       Cell 4
@@ -183,20 +183,20 @@ exports[`<Grid /> renders correctly 1`] = `
               >
                 <Box
                   autoid="Cell 5_cell"
-                  className="sc-jSFjdj GVHQI"
+                  className="sc-jRQBWg cblwIr"
                   display="flex"
                   gridColumn="span 1"
                   gridRow="span 1"
                 >
                   <styled.div
-                    className="sc-jSFjdj GVHQI"
+                    className="sc-jRQBWg cblwIr"
                     data-autoid="cell_5_cell"
                     display="flex"
                     gridColumn="span 1"
                     gridRow="span 1"
                   >
                     <div
-                      className="sc-bdnxRM frecOH sc-jSFjdj GVHQI"
+                      className="sc-bdvvtL ALGtx sc-jRQBWg cblwIr"
                       data-autoid="cell_5_cell"
                     >
                       Cell 5

@@ -13,7 +13,7 @@ describe('<Grid />', () => {
         <Cell>Cell 3</Cell>
         <Cell>Cell 4</Cell>
         <Cell>Cell 5</Cell>
-      </Grid>,
+      </Grid>
     );
 
     expect(toJson(wrapper)).toMatchSnapshot();

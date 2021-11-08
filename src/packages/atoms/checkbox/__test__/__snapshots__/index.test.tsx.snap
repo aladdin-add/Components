@@ -41,7 +41,7 @@ exports[`<Checkbox /> renders correctly checked 1`] = `
           border="1"
           borderColor="neutrals.10"
           borderRadius="1"
-          className="sc-dlnjwi"
+          className="sc-dkPtRN"
           cursor="pointer"
           data-autoid="checkbox"
           data-checked={true}
@@ -57,7 +57,7 @@ exports[`<Checkbox /> renders correctly checked 1`] = `
             border="1"
             borderColor="neutrals.10"
             borderRadius="1"
-            className="sc-dlnjwi"
+            className="sc-dkPtRN"
             cursor="pointer"
             data-autoid="checkbox"
             data-checked={true}
@@ -68,7 +68,7 @@ exports[`<Checkbox /> renders correctly checked 1`] = `
             size={7}
           >
             <div
-              className="sc-bdnxRM XzNGZ sc-dlnjwi"
+              className="sc-bdvvtL bYfFnD sc-dkPtRN"
               cursor="pointer"
               data-autoid="checkbox"
               data-checked={true}
@@ -90,14 +90,14 @@ exports[`<Checkbox /> renders correctly checked 1`] = `
                   >
                     <Box
                       autoid="undefinedcheckbox_icon_icon"
-                      className="sc-gtsrHT ckfvPy"
+                      className="sc-gsDKAQ kKeeks"
                     >
                       <styled.div
-                        className="sc-gtsrHT ckfvPy"
+                        className="sc-gsDKAQ kKeeks"
                         data-autoid="undefinedcheckbox_icon_icon"
                       >
                         <div
-                          className="sc-bdnxRM jWmaYf sc-gtsrHT ckfvPy"
+                          className="sc-bdvvtL jqaqtJ sc-gsDKAQ kKeeks"
                           data-autoid="undefinedcheckbox_icon_icon"
                         />
                       </styled.div>
@@ -181,7 +181,7 @@ exports[`<Checkbox /> renders correctly indeterminate 1`] = `
           border="1"
           borderColor="neutrals.10"
           borderRadius="1"
-          className="sc-dlnjwi"
+          className="sc-dkPtRN"
           cursor="pointer"
           data-autoid="checkbox"
           data-indeterminate={true}
@@ -196,7 +196,7 @@ exports[`<Checkbox /> renders correctly indeterminate 1`] = `
             border="1"
             borderColor="neutrals.10"
             borderRadius="1"
-            className="sc-dlnjwi"
+            className="sc-dkPtRN"
             cursor="pointer"
             data-autoid="checkbox"
             data-indeterminate={true}
@@ -206,7 +206,7 @@ exports[`<Checkbox /> renders correctly indeterminate 1`] = `
             size={7}
           >
             <div
-              className="sc-bdnxRM aFGOi sc-dlnjwi"
+              className="sc-bdvvtL cdborM sc-dkPtRN"
               cursor="pointer"
               data-autoid="checkbox"
               data-indeterminate={true}
@@ -228,14 +228,14 @@ exports[`<Checkbox /> renders correctly indeterminate 1`] = `
                   >
                     <Box
                       autoid="undefinedcheckbox_icon_icon"
-                      className="sc-gtsrHT ckfvPy"
+                      className="sc-gsDKAQ kKeeks"
                     >
                       <styled.div
-                        className="sc-gtsrHT ckfvPy"
+                        className="sc-gsDKAQ kKeeks"
                         data-autoid="undefinedcheckbox_icon_icon"
                       >
                         <div
-                          className="sc-bdnxRM jWmaYf sc-gtsrHT ckfvPy"
+                          className="sc-bdvvtL jqaqtJ sc-gsDKAQ kKeeks"
                           data-autoid="undefinedcheckbox_icon_icon"
                         />
                       </styled.div>
@@ -315,7 +315,7 @@ exports[`<Checkbox /> renders correctly no icon 1`] = `
           border="1"
           borderColor="neutrals.10"
           borderRadius="1"
-          className="sc-dlnjwi"
+          className="sc-dkPtRN"
           cursor="pointer"
           data-autoid="checkbox"
           display="flex"
@@ -329,7 +329,7 @@ exports[`<Checkbox /> renders correctly no icon 1`] = `
             border="1"
             borderColor="neutrals.10"
             borderRadius="1"
-            className="sc-dlnjwi"
+            className="sc-dkPtRN"
             cursor="pointer"
             data-autoid="checkbox"
             display="flex"
@@ -338,7 +338,7 @@ exports[`<Checkbox /> renders correctly no icon 1`] = `
             size={7}
           >
             <div
-              className="sc-bdnxRM aFGOi sc-dlnjwi"
+              className="sc-bdvvtL cdborM sc-dkPtRN"
               cursor="pointer"
               data-autoid="checkbox"
               onClick={[Function]}

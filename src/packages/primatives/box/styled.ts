@@ -36,7 +36,7 @@ export const StyledBoxProps = compose(
   border,
   shadow,
   flexbox,
-  utilProps,
+  utilProps
 );
 
 export const StyledBox = styled.div.withConfig({
