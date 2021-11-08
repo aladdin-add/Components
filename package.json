@@ -15,7 +15,7 @@
     "build": "yarn build:tokens && tsdx build",
     "build:tokens": "node ./node_modules/@aw-web-design/theme/dist/cli.js generate",
     "test": "yarn build:tokens && tsdx test",
-    "lint": "eslint .",
+    "lint": "eslint --ext .js,.ts,.tsx",
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
