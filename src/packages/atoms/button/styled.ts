@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { variant, Theme } from '@aw-web-design/styled-system';
-import Interactable from '@/primatives/interactable';
+import { Interactable } from '@/primatives';
 
 export const iconMargins = {
   left: {
@@ -44,12 +44,11 @@ export const ButtonVariants = (theme: Theme) => {
       // @ts-ignore
       variants: theme.variants?.buttons(theme),
     });
-  } else {
-    return variant({
-      // @ts-ignore
-      variants: theme.variants?.buttons,
-    });
   }
+  return variant({
+    // @ts-ignore
+    variants: theme.variants?.buttons,
+  });
 };
 
 export const StyledInteractable = styled(Interactable)`
@@ -75,9 +74,9 @@ export const StyledInteractable = styled(Interactable)`
   }
   ${(p) => css`
     ${variant({
-      prop: 'typography',
-      scale: 'typography.type',
-    })}
+    prop: 'typography',
+    scale: 'typography.type',
+  })}
     ${ButtonVariants(p.theme)}
   `}
 `;

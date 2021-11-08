@@ -24,9 +24,7 @@ const utilProps = system({
   bg: {
     property: 'color',
     scale: 'colors',
-    transform: (scale, n) => {
-      return getContrast(get(scale, n, n), scale as any);
-    },
+    transform: (scale, n) => getContrast(get(scale, n, n), scale as any),
   },
 });
 
@@ -38,7 +36,7 @@ export const StyledBoxProps = compose(
   border,
   shadow,
   flexbox,
-  utilProps
+  utilProps,
 );
 
 export const StyledBox = styled.div.withConfig({

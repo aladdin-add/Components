@@ -1,7 +1,7 @@
 import React, { useContext, Suspense, memo } from 'react';
 import { HelpCircle } from 'react-feather';
 import { generateAutomationId, ConfigContext } from '@/utils';
-import { BoxProps } from '@/primatives';
+import { BoxProps } from '@/primatives/box';
 
 import { getIcon } from './utils';
 import { SvgWrapper } from './styled';

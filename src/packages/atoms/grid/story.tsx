@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Grid, { Cell } from './';
+import Grid, { Cell } from '.';
 
 export default {
   title: 'Components / Atoms / Grid',

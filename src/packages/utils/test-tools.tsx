@@ -1,5 +1,7 @@
 import React, { ReactNode } from 'react';
-import { mount, shallow, ShallowWrapper, ReactWrapper } from 'enzyme';
+import {
+  mount, shallow, ShallowWrapper, ReactWrapper,
+} from 'enzyme';
 import { ThemeProvider } from 'styled-components';
 import { ConfigContext } from '@/utils/context/config';
 import theme from '@/theme';
@@ -12,14 +14,12 @@ const config = {
 const removeProperties = () => {
   const keys = ['theme', 'styledTheme'];
   return {
-    test: (val: any) => {
-      return (
-        val &&
-        typeof val === 'object' &&
-        'props' in val &&
-        Object.keys(val.props).some((prop) => keys.some((key) => key === prop))
-      );
-    },
+    test: (val: any) => (
+      val
+        && typeof val === 'object'
+        && 'props' in val
+        && Object.keys(val.props).some((prop) => keys.some((key) => key === prop))
+    ),
     print: (val: any, serialize: any) => {
       keys.forEach((key) => {
         delete val.props[key];
@@ -39,20 +39,19 @@ const formattedTheme = {
 };
 
 export const shallowWithTheme: (children: ReactNode) => ShallowWrapper = (
-  children: ReactNode
-) =>
-  shallow(<ThemeProvider theme={formattedTheme}>{children}</ThemeProvider>)
-    .dive()
-    .shallow();
+  children: ReactNode,
+) => shallow(<ThemeProvider theme={formattedTheme}>{children}</ThemeProvider>)
+  .dive()
+  .shallow();
 
 export const mountWithTheme: (children: ReactNode) => ReactWrapper = (
-  children: ReactNode
+  children: ReactNode,
 ) => {
   expect.addSnapshotSerializer(removeProperties());
 
   return mount(
     <ConfigContext.Provider value={config}>
       <ThemeProvider theme={formattedTheme}>{children}</ThemeProvider>
-    </ConfigContext.Provider>
+    </ConfigContext.Provider>,
   );
 };

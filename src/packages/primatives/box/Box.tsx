@@ -29,7 +29,9 @@ export interface Props
   pointerEvents?: Property.PointerEvents;
 }
 
-const Box = ({ children, as, autoid, ...rest }: Props) => (
+const Box = ({
+  children, as, autoid, ...rest
+}: Props) => (
   <StyledBox data-autoid={generateAutomationId(autoid ?? '')} as={as} {...rest}>
     {children}
   </StyledBox>

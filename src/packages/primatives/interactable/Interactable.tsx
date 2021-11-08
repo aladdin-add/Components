@@ -1,5 +1,5 @@
 import React from 'react';
-import { BoxProps } from '@/primatives';
+import { BoxProps } from '@/primatives/box';
 import { generateAutomationId } from '@/utils';
 
 import { StyledInteractable } from './styled';
