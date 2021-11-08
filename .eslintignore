@@ -6,3 +6,5 @@ setupTests.js
 index.test.tsx
 index.test.ts
 story.tsx
+theme
+utils
