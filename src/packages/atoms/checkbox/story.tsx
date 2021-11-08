@@ -1,16 +1,12 @@
 import React from 'react';
 
-import Checkbox from './';
+import Checkbox from '.';
 
 export default {
   title: 'Components / Atoms / Checkbox',
   component: Checkbox,
 };
 
-export const story = () => {
-  return <Checkbox checked />;
-};
+export const story = () => <Checkbox checked />;
 
-export const Indeterminate = () => {
-  return <Checkbox indeterminate />;
-};
+export const Indeterminate = () => <Checkbox indeterminate />;

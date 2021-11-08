@@ -38,9 +38,9 @@ const Button = ({
       {iconName && (
         <Icon
           name={iconName}
-          {...(hasChildren &&
-            iconPosition in iconMargins &&
-            iconMargins[iconPosition])}
+          {...(hasChildren
+            && iconPosition in iconMargins
+            && iconMargins[iconPosition])}
         />
       )}
       {typeof children === 'string' ? <Text>{children}</Text> : { children }}

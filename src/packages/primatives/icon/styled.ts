@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { IntentVariants } from '@aw-web-design/styled-system';
-import { Box, StyledBoxProps } from '@/primatives';
+import { Box, StyledBoxProps } from '@/primatives/box';
 import { shouldForwardProp } from '@/utils';
 
 export const SvgWrapper = styled(Box).withConfig({
@@ -13,7 +13,7 @@ export const SvgWrapper = styled(Box).withConfig({
   pointer-events: none;
 
   svg {
-    ${(p) => !p.noFill && `fill: currentColor;`}
+    ${(p) => !p.noFill && 'fill: currentColor;'}
     pointer-events: none;
 
     ${IntentVariants}

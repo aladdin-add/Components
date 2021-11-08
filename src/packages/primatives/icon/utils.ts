@@ -2,7 +2,7 @@ import lazy from 'react-lazy-named';
 
 export const getIcon = (
   config: import('../../utils').Context | null,
-  name: string
+  name: string,
 ) => {
   if (config?.iconDir) {
     switch (config.iconDir) {

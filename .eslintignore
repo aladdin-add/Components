@@ -1,1 +1,10 @@
 dist
+.eslintrc.js
+babel.config.js
+jestAliasResolver.js
+setupTests.js
+index.test.tsx
+index.test.ts
+story.tsx
+theme
+utils

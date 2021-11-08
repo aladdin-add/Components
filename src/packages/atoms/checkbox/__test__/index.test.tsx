@@ -2,7 +2,7 @@ import React from 'react';
 import toJson from 'enzyme-to-json';
 import { mountWithTheme } from '@/utils';
 
-import Checkbox from '../';
+import Checkbox from '..';
 
 describe('<Checkbox />', () => {
   it('renders correctly no icon', () => {
