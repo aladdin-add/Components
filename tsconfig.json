@@ -20,7 +20,7 @@
     "noEmit": true,
     "baseUrl": "./src",
     "paths": {
-      "@*": [
+      "@/*": [
         "packages/*",
         "packages/atoms/*",
         "packages/molecules/*",
