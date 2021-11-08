@@ -1,1 +1,4 @@
 dist
+babel.config.js
+jestAliasResolver.js
+setupTests.js
